@@ -17,7 +17,7 @@ const Navbar = () => {
     <>
       {/* {menuOpen && ( */}
         <div
-          className={` fixed bottom-0  right-0 top-0 z-50 w-[75%] bg-[#182228] ${menuOpen ? 'menu-open ' : 'menu-close'} mobile-menu`}
+          className={` md:hidden fixed bottom-0  right-0 top-0 z-50 w-[75%] bg-[#182228] ${menuOpen ? 'menu-open ' : 'menu-close'} mobile-menu`}
         >
           <div
             className='flex justify-end pr-[35px] pt-[47px]'
