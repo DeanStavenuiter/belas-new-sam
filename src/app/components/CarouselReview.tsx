@@ -45,11 +45,11 @@ const CarouselReview = () => {
   return (
     <>
       <div
-        className={`flex w-full flex-col overflow-y-hidden overflow-x-scroll `}
+        className={`flex w-full flex-col overflow-y-hidden overflow-x-scroll  `}
         onScroll={handleScroll}
         ref={cardsContainerRef}
       >
-        <div className={`flex flex-row justify-center pl-[835px]`}>
+        <div className={`flex flex-row justify-center pl-[835px] sm:pl-[380px]`}>
           {cards.map((card, index) => (
             <div
               key={index}
@@ -61,7 +61,7 @@ const CarouselReview = () => {
         </div>
       </div>
       <div className='flex flex-row justify-center gap-2'>
-        {cards.map((card, index) => (
+        {/* {cards.map((card, index) => (
           <div key={index} className='pb-4'>
             <div
               className={`w-[25px] rounded-[5px] border-[2px] border-solid ${
@@ -69,7 +69,7 @@ const CarouselReview = () => {
               }`}
             ></div>
           </div>
-        ))}
+        ))} */}
       </div>
     </>
   );

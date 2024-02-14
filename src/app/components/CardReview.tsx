@@ -9,8 +9,8 @@ interface CardReviewProps {
 
 const CardReview = ({ header, name, text }: CardReviewProps) => {
   return (
-    <div className='shadow-review my-[40px] rounded-[5px]'>
-      <div className=' flex h-[335px] w-[360px] flex-col pl-[51px] pt-[48px] '>
+    <div className='my-[40px] rounded-[5px]'>
+      <div className='shadow-review hover-effect-review flex h-[335px] w-[360px] flex-col rounded-[5px] pl-[51px] pt-[48px] '>
         <h5 className='mb-[50px] pr-[33px] text-[22px] font-semibold tracking-tight text-[#6187C3]'>
           {header}
         </h5>

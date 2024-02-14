@@ -43,13 +43,13 @@ const CarouselHekken = () => {
   };
 
   return (
-    <>
+    <div className='overflow-x-hidden sm:mb-[80px]'>
       <div
         className={`flex w-full flex-col overflow-y-hidden overflow-x-scroll `}
         onScroll={handleScroll}
         ref={cardsContainerRef}
       >
-        <div className={`flex flex-row justify-center pl-[735px]`}>
+        <div className={`flex flex-row justify-center pl-[735px] md:justify-start md:pl-[180px] xl:pl-[360px] sm:scroll-none`}>
           {cards.map((card, index) => (
             <div
               key={index}
@@ -60,7 +60,7 @@ const CarouselHekken = () => {
           ))}
         </div>
       </div>
-      <div className='flex flex-row justify-center gap-2'>
+      <div className='flex flex-row justify-center gap-2 md:hidden'>
         {cards.map((card, index) => (
           <div key={index} className='pb-4'>
             <div
@@ -71,7 +71,7 @@ const CarouselHekken = () => {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="nl">
+    <html lang="nl-NL">
       <body className={`${barlow.className}`} >{children}</body>
     </html>
   );

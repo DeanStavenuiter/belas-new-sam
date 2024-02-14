@@ -9,8 +9,18 @@ body {
   padding: 0;
 }
 
-.zoom {
+.bg-hero-img {
   background-size: 200%;
+  background-position-x: 38%;
+  background-position-y: 111%;
+  background-image: linear-gradient(
+      0deg,
+      #182228 0%,
+      #182228 13%,
+      #18222899 52%,
+      #18222800 100%
+    ),
+    url('/hero-img.webp');
 }
 
 .bg-hek {
@@ -107,7 +117,7 @@ body {
     url('/project4.webp');
   background-size: 145%;
   background-repeat: no-repeat;
-  background-position: -55px 15px;
+  background-position: -55px 0px;
 }
 
 .bg-project-5 {
@@ -152,6 +162,10 @@ body {
 
 .shadow-review {
   box-shadow: 0px 10px 50px #6c6c6c1a;
+}
+
+.shadow-menu {
+  box-shadow: 0px 5px 15px #0e1a2e46;
 }
 
 .carousel-container {
@@ -222,11 +236,9 @@ body {
   animation: slideRightOut 0.5s ease;
 }
 
-
-
 /* avatar */
 
-.container{
+.container {
   position: relative;
   left: -23px;
   bottom: 40px;
@@ -238,17 +250,16 @@ body {
   margin-bottom: 55px;
 }
 
-.box{
+.box {
   position: relative;
   width: 100px;
   height: 150px;
-  background-color: #1A3055;
+  background-color: #1a3055;
   margin: 0px 20px 10px;
   overflow: hidden;
- 
 }
 
-.box::before{
+.box::before {
   content: '';
   position: absolute;
   bottom: 1px;
@@ -258,10 +269,10 @@ body {
   background-color: transparent;
   border-radius: 50%;
   z-index: 1;
-  box-shadow: 0 50px 0 20px #1A3055;
+  box-shadow: 0 50px 0 20px #1a3055;
 }
 
-.box::after{
+.box::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -274,25 +285,153 @@ body {
   border-bottom: 6px solid #1a3055;
 }
 
-.box .circle{
+.box .circle {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100px;
   height: 100px;
-  background-color:#162B4D;
+  background-color: #162b4d;
   overflow: hidden;
   border-radius: 50%;
-  border: 2px solid #1a3055
+  border: 2px solid #1a3055;
 }
 
 .box .circle .image,
-.box .image{
-position: absolute;
-bottom: 0;
-left: 50%;
-transform: translateX(-50%);
-height: 141px;
-width: 195px;
-max-width: unset;
+.box .image {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 141px;
+  width: 195px;
+  max-width: unset;
+}
+
+@media (min-width: 730px) {
+  .bg-hero-img {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-x: 0px;
+    background-position-y: 100%;
+    background-image: linear-gradient(
+        90deg,
+        #182228 0%,
+        #182228 13%,
+        #18222899 52%,
+        #18222800 100%
+      ),
+      url('/hero-img.webp');
+  }
+
+  .bg-man-phone {
+    background-position-x: 0px;
+  }
+}
+
+@media (min-width: 1030px) {
+  .bg-hek {
+    background-size: 35%;
+    background-repeat: no-repeat;
+    background-position-y: 12px;
+    background-position-x: 205px;
+    background-image: url('/hekwerk.webp');
+  }
+
+  .bg-hek-card {
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position-y: 36px;
+    background-position-x: 13px;
+    background-image: url('/hekwerk.webp');
+  }
+
+  .bg-trap {
+    background-size: 40%;
+    background-repeat: no-repeat;
+    background-position-y: -195px;
+    background-position-x: 160px;
+    background-image: url('/trap.webp');
+  }
+}
+
+.chevron-animation {
+  transition: transform 0.5s ease-in-out; /* Adding transition for smooth animation */
+}
+
+.hovered:hover .chevron-animation {
+  transform: translateX(
+    15px
+  ); /* Moving the chevron to the right when hovering over the outer div */
+}
+
+@media (min-width: 768px) {
+  @keyframes hoverEffectReview {
+    0% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(-5px);
+    }
+  }
+
+  .hover-effect-review:hover {
+    animation: hoverEffectReview 0.5s ease forwards;
+    border: solid 1px #a2beea;
+  }
+}
+
+
+.image-container {
+  height: auto; 
+  position: relative;
+  z-index: 99;
+  bottom: 308px;
+  left: 48%;
+}
+
+.image-container img {
+  filter: drop-shadow(10px 5px 5px #292929);
+}
+
+.text-underline-orange:hover .hover-effect {
+  color: #E98A14;
+}
+
+.text-underline-orange:hover > div .hover-effect{
+  color: #E98A14;
+  border-bottom: solid 0.5px  #E98A14;
+  padding-bottom: 3px;
+}
+
+@keyframes slideInMenu {
+  from {
+    transform: translateX(324px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes slideOutMenu {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(324px);
+  }
+}
+
+.menu-open {
+  animation-name: slideInMenu; /* Apply slide-in animation */
+}
+
+.menu-close {
+  animation-name: slideOutMenu; /* Apply slide-out animation */
+}
+
+.mobile-menu{
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
 }

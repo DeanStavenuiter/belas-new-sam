@@ -8,9 +8,27 @@ const CarouselNieuws = () => {
   const cardsContainerRef = useRef<HTMLDivElement>(null);
 
   const cards = [
-    <CardNieuws key={1} imgSrc='project1.jpg' title='Hier komt de titel van het blog' imgBgClass={'bg-project-1'}/>,
-    <CardNieuws key={2} imgSrc='project2.jpg' title='Hier komt de titel van het blog' imgBgClass={'bg-project-2'}/>,
-    <CardNieuws key={3} imgSrc='project3.jpg' title='Hier komt de titel van het blog' imgBgClass={'bg-project-3'}/>,
+    <CardNieuws
+      key={1}
+      imgSrc='project1.jpg'
+      title='Hier komt de titel van het blog'
+      imgBgClass={'bg-project-1'}
+      href=''
+    />,
+    <CardNieuws
+      key={2}
+      imgSrc='project2.jpg'
+      title='Hier komt de titel van het blog'
+      imgBgClass={'bg-project-2'}
+      href=''
+    />,
+    <CardNieuws
+      key={3}
+      imgSrc='project3.jpg'
+      title='Hier komt de titel van het blog'
+      imgBgClass={'bg-project-3'}
+      href=''
+    />,
   ];
 
   const handleScroll = () => {
@@ -29,28 +47,17 @@ const CarouselNieuws = () => {
         onScroll={handleScroll}
         ref={cardsContainerRef}
       >
-        <div className={`flex flex-row justify-center pl-[555px]`}>
+        <div className={`flex flex-row justify-start pl-[035px] md:pl-0`}>
           {cards.map((card, index) => (
             <div
               key={index}
-              className={` ${index === currentIndex ? 'active' : ''} pr-[35px]`}
+              className={` ${index === currentIndex ? 'active' : ''} pr-[35px] md:pr-[25px]`}
             >
               {card}
             </div>
           ))}
         </div>
       </div>
-      {/* <div className='flex flex-row justify-center gap-2'>
-        {cards.map((card, index) => (
-          <div key={index} className='pb-4'>
-            <div
-              className={`w-[25px] rounded-[5px] border-[2px] border-solid ${
-                index === currentIndex ? 'border-[#1A3055]' : 'border-[#E4E4E4]'
-              }`}
-            ></div>
-          </div>
-        ))}
-      </div> */}
     </>
   );
 };
