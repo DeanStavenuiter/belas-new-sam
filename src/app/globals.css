@@ -406,10 +406,10 @@ body {
 
 @keyframes slideInMenu {
   from {
-    transform: translateX(324px);
+    transform: translateX(100%);
   }
   to {
-    transform: translateX(0px);
+    transform: translateX(0%);
   }
 }
 
@@ -418,7 +418,7 @@ body {
     transform: translateX(0px);
   }
   to {
-    transform: translateX(324px);
+    transform: translateX(100%);
   }
 }
 

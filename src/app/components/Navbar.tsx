@@ -9,16 +9,20 @@ import GrijzeBar from './GrijzeBar';
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const handleClick = () => {
-    console.log('menu is open: ', menuOpen);
+  const handleClick = async () => {
     setMenuOpen(!menuOpen);
   };
 
   return (
     <>
       {/* {menuOpen && ( */}
-        <div className={`fixed bottom-0  top-0 right-0 z-50 w-[75%] bg-[#182228] ${menuOpen ? 'menu-open ': 'menu-close'} mobile-menu`}>
-          <div className='flex justify-end pr-[35px] pt-[47px]' onClick={handleClick}>
+        <div
+          className={` fixed bottom-0  right-0 top-0 z-50 w-[75%] bg-[#182228] ${menuOpen ? 'menu-open ' : 'menu-close'} mobile-menu`}
+        >
+          <div
+            className='flex justify-end pr-[35px] pt-[47px]'
+            onClick={handleClick}
+          >
             <svg
               xmlns='http://www.w3.org/2000/svg'
               height='24'
@@ -174,18 +178,21 @@ const Navbar = () => {
                   />
                 </svg>
                 <span className='text-[15px] text-white opacity-[0.2]'>
-                    5.0 (In Google)
+                  5.0 (In Google)
                 </span>
               </li>
             </ul>
           </div>
-          <div className='flex justify-end h-[335px] items-end text-white'>
-               <div className='flex flex-col justify-center w-full px-[45px] gap-[20px]'>
-            <div className='btn w-full border-none bg-[#E98A14] '>Gratis offerte ontvangen</div>
-            <div className='btn w-full border-none bg-[#FFFFFF]  bg-opacity-[0.15] '>Projecten</div>
+          <div className='flex h-[335px] items-end justify-end text-white'>
+            <div className='flex w-full flex-col justify-center gap-[20px] px-[45px]'>
+              <div className='btn w-full border-none bg-[#E98A14] '>
+                Gratis offerte ontvangen
+              </div>
+              <div className='btn w-full border-none bg-[#FFFFFF]  bg-opacity-[0.15] '>
+                Projecten
+              </div>
+            </div>
           </div>
-          </div>
-       
         </div>
       {/* )} */}
 
