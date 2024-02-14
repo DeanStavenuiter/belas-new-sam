@@ -51,8 +51,8 @@ const CardHekken = ({ nameProduct, price, imgBgClass }: CardHekkenProps) => {
             </span>
           </div>
 
-          <div className='mt-[26px] w-full'>
-            <div className='btn w-full rounded-[5px] border-none bg-[#E98A14]'>
+          <div className='mt-[26px] w-full hover:cursor-pointer'>
+            <div className='btn w-full rounded-[5px] border-none bg-[#E98A14] hover:bg-[#E98A14]'>
               <span className='text-[18px] font-normal tracking-tight text-white'>
                 Hek bekijken
               </span>
