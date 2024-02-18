@@ -36,24 +36,27 @@ const CarouselHekken = () => {
   const handleScroll = () => {
     if (cardsContainerRef.current) {
       const scrollPosition = cardsContainerRef.current.scrollLeft;
-      const cardWidth = 355;
+      const cardWidth = 320;
       const newIndex = Math.round(scrollPosition / cardWidth);
       setCurrentIndex(newIndex);
+      console.log('index', currentIndex);
     }
   };
 
   return (
-    <div className='overflow-x-hidden sm:mb-[80px]'>
+    <div className='sm:mb-[80px]'>
       <div
-        className={`flex w-full flex-col overflow-y-hidden overflow-x-scroll `}
-        onScroll={handleScroll}
-        ref={cardsContainerRef}
+        className={`flex w-full flex-col`}
       >
-        <div className={`flex flex-row justify-center pl-[735px] md:justify-start md:pl-[180px] xl:pl-[360px] sm:scroll-none`}>
+        <div
+          className={`sm:scroll-none flex flex-row justify-center overflow-x-scroll  pl-[735px] sm:w-[1200px] md:pl-[240px]`}
+          onScroll={handleScroll}
+          ref={cardsContainerRef}
+        >
           {cards.map((card, index) => (
             <div
               key={index}
-              className={` ${index === currentIndex ? 'active' : ''} pr-[35px]`}
+              className={` ${index === currentIndex ? 'active' : ''} pr-[40px]`}
             >
               {card}
             </div>

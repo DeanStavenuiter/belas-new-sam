@@ -4,7 +4,7 @@ import CarouselPortfolio from './CarouselPortfolio';
 const Portfolio = () => {
   return (
     <>
-      <div className='rounded-[5px] bg-[#193155] px-[35px] py-[80px] md:ml-[360px] md:px-[143px]'>
+      <div className='rounded-[5px] bg-[#193155] px-[35px] py-[80px] md:px-[143px]'>
         <div className='flex justify-center md:justify-start'>
           <h2 className=' text-[51px] font-black uppercase tracking-tight text-white opacity-[0.07]'>
             Portfolio

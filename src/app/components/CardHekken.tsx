@@ -9,7 +9,7 @@ export interface CardHekkenProps {
 
 const CardHekken = ({ nameProduct, price, imgBgClass }: CardHekkenProps) => {
   return (
-    <div className='mb-[40px] flex justify-center rounded-[5px] min-w-[320px]'>
+    <div className='mb-[40px] flex justify-center rounded-[5px] w-[320px]'>
       <div className='shadow-cards flex h-[530px] w-[320px] flex-col p-[22px]'>
         <div className={`${imgBgClass} h-[237px] w-[276px] rounded-[5px] bg-[#F7F7F7]`}></div>
 

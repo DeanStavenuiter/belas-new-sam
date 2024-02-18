@@ -12,7 +12,7 @@ const MobileMenu = ({ handleClick }: menuProps) => {
   return (
     <>
       <div>
-        <ul className='flex w-full flex-row items-center justify-center gap-[10px] md:hidden'>
+        <ul className='flex w-full flex-row items-center justify-center gap-[10px] lg:hidden'>
           <li>
             <Link href={''}>
               <div className='btn w-[169px] rounded-[5px] border-none bg-[#E4E4E4]'>
