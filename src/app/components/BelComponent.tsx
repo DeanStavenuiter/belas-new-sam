@@ -13,7 +13,7 @@ const BelOns = () => {
 
   return (
     <>
-      <div className='fixed bottom-[67px] z-10 right-[13px] sm:right-0 max-w-[200px] md:right-[180px] lg:right-[330px]'>
+      <div className='fixed bottom-[67px] z-0 sm:z-20 right-[13px] sm:right-0 max-w-[200px] md:right-[180px] lg:right-[330px]'>
         <div className='flex flex-col gap-[10px]'>
           {!close && (
             <div className='mr-[35px] flex flex-row items-end justify-end gap-[10px]'>
