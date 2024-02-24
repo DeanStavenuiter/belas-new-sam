@@ -18,7 +18,7 @@ const CardHekken = ({ nameProduct, price, imgBgClass }: CardHekkenProps) => {
             {nameProduct}
           </h4>
           <div className='flex h-[34] w-[107px] items-center justify-center rounded-[5px] bg-[#1A3055] pt-[7.5px] pb-[8.5px] pl-[25px] pr-[24px]'>
-            <span className='italic text-white'>Populair!</span>
+            <span className='italic text-white text-[15px]'>Populair!</span>
           </div>
         </div>
 

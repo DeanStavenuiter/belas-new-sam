@@ -206,7 +206,7 @@ const Navbar = () => {
         </div>
         <div className='flex mt-[152px] mb-[45px] text-white'>
           <div className='flex w-full flex-col justify-center gap-[20px] px-[45px]'>
-            <div className='btn w-full border-none bg-[#E98A14] '>
+            <div className='btn w-full border-none bg-[#E98A14] text-[16px] '>
               Gratis offerte ontvangen
             </div>
             <div className='btn w-full border-none bg-[#FFFFFF]  bg-opacity-[0.15] '>
