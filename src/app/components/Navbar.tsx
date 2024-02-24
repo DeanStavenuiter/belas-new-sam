@@ -2,22 +2,43 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import MobileMenu from './MobileMenuBar';
 import GrijzeBar from './GrijzeBar';
 
 const Navbar = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState<Boolean | null>(null);
 
   const handleClick = async () => {
-    setMenuOpen(!menuOpen);
+    menuOpen ? setMenuOpen(false) :  setMenuOpen(true);
   };
+
+  useEffect(() => {
+    setMenuOpen(null);
+  }, []);
+
+  useEffect(() => {
+    // Add or remove the 'overflow-hidden' class to the body depending on the menuOpen state
+    if (menuOpen) {
+      document.body.classList.add('overflow-hidden');
+    } else {
+      document.body.classList.remove('overflow-hidden');
+    }
+
+    // Clean up the effect
+    return () => {
+      document.body.classList.remove('overflow-hidden');
+    };
+  }, [menuOpen]);
+
+
 
   return (
     <>
       {/* mobile side menu */}
+      {menuOpen && <div className="backdrop" onClick={handleClick}></div>}
       <div
-        className={` fixed bottom-0 right-0  top-0 z-50 w-[75%] bg-[#182228] lg:hidden ${menuOpen ? 'menu-open ' : 'menu-close'} mobile-menu`}
+        className={` fixed bottom-0 right-0  top-0 z-50 w-[75%] bg-[#182228] lg:hidden ${menuOpen ? 'menu-open ' : menuOpen === null ? '' : 'menu-close'} mobile-menu overflow-y-scroll` }
       >
         <div
           className='flex justify-end pr-[35px] pt-[47px]'
@@ -183,7 +204,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className='flex h-[335px] items-end justify-end text-white'>
+        <div className='flex mt-[152px] mb-[45px] text-white'>
           <div className='flex w-full flex-col justify-center gap-[20px] px-[45px]'>
             <div className='btn w-full border-none bg-[#E98A14] '>
               Gratis offerte ontvangen
@@ -198,69 +219,73 @@ const Navbar = () => {
       <GrijzeBar />
 
       {/* blue menu bar */}
-      <div className='shadow-menu-blue sticky top-0 z-10 hidden h-[73px] w-full  items-center bg-[#1A3055] lg:flex lg:justify-normal lg:pl-[3%] xl:pl-[5%] 2xl:pl-[18.75%]'>
-        <ul className='hidden items-center justify-center gap-[36px] xl:gap-[40.5px] text-[18px]/[43px] font-semibold text-white sm:flex'>
-          <li className='lg:pl-[27.13px] xl:pl-0'>
-            <Link href={''}>Aluminium hekken</Link>
-          </li>
-          <li>
-            <Link href={''}>Stalen hekken</Link>
-          </li>
-          <li>
-            <Link href={''}>Constructies</Link>
-          </li>
-          <li>
-            <Link href={''}>Machine bouw</Link>
-          </li>
-          <li className='hidden xl:block'>
-            <Link href={''}>Projecten</Link>
-          </li>
-          <li className='hidden xl:block'>
-            <Link href={''}>Klantenservice</Link>
-          </li>
-          <li className='hidden xl:block'>
-            <Link href={''}>Blog</Link>
-          </li>
-          <Link href={''}>
-            <div className='btn rounded-[5px] border-none bg-[#E98A14] pl-[41px] pr-[39px] text-[18px]/[43px] font-semibold text-white hover:bg-[#E98A14] hover:opacity-90'>
-              Offerte aanvragen
-            </div>
-          </Link>
-        </ul>
+      <div className='shadow-menu-blue fixed top-0 z-10 hidden h-[73px] w-full  items-center bg-[#1A3055] lg:flex justify-center content-padding'>
+        <div className='w-[1200px] '>
+          <ul className='hidden items-center text-[18px]/[43px] font-semibold text-white sm:flex justify-center'>
+            <li className=' xl:pl-0'>
+              <Link href={''}>Aluminium hekken</Link>
+            </li>
+            <li className='pl-[39px]'>
+              <Link href={''}>Stalen hekken</Link>
+            </li>
+            <li className='pl-[46px]'>
+              <Link href={''}>Constructies</Link>
+            </li>
+            <li className='pl-[40px]'>
+              <Link href={''}>Machine bouw</Link>
+            </li>
+            <li className='hidden xl:block pl-[41.5px]'>
+              <Link href={''}>Projecten</Link>
+            </li>
+            <li className='hidden xl:block pl-[35px]'>
+              <Link href={''}>Klantenservice</Link>
+            </li>
+            <li className='hidden xl:block pl-[35px]'>
+              <Link href={''}>Blog</Link>
+            </li>
+            <Link href={''} className='ml-[37px]'>
+            <div className='btn h-[52px] w-[223px] rounded-[5px] bg-[#E98A14]  pl-[41px] pr-[39px] text-[18px] font-semibold tracking-tight text-white hover:bg-[#E98A14] hover:opacity-90 border-none'>
+               <span>Offerte aanvragen</span> 
+              </div>
+            </Link>
+          </ul>
+        </div>
       </div>
 
       {/* white menu bar */}
-      <div className='shadow-menu-white relative z-10 flex h-[73px] w-full items-center  justify-center bg-[#FFFFFF] lg:bottom-[73px] lg:justify-normal lg:pl-[3%] xl:pl-[5%] 2xl:pl-[18.75%]'>
-        <div className='z-10 mr-[173px] mt-[43px] hidden rounded-[5px] bg-white px-[30px] py-[16px] xl:block'>
-          <Image
-            src={
-              'https://belas.s3.eu-north-1.amazonaws.com/belas-new/belas_logo.webp'
-            }
-            width={111}
-            height={83}
-            alt='belas VOF logo'
-            className='rounded-[5px]'
-          />
+      <div className='shadow-menu-white relative z-10 flex h-[73px] w-full items-center  justify-center bg-[#FFFFFF] lg:bottom-0 padding-content'>
+        <div className='w-[1200px] flex-row  items-center justify-center hidden lg:flex'>
+          <div className='z-10 mr-[173px] mt-[43px] hidden rounded-[5px] bg-white px-[30px] py-[16px] xl:block'>
+            <Image
+              src={
+                'https://belas.s3.eu-north-1.amazonaws.com/belas-new/belas_logo.webp'
+              }
+              width={111}
+              height={83}
+              alt='belas VOF logo'
+              className='rounded-[5px]'
+            />
+          </div>
+          <ul className='hidden items-center justify-center text-[18px]/[43px] font-semibold text-[#182228] text-opacity-[0.75] lg:flex'>
+            <li className=''>
+              <Link href={''}>Aluminium hekken</Link>
+            </li>
+            <li className='pl-[39px]'>
+              <Link href={''}>Stalen hekken</Link>
+            </li>
+            <li className='pl-[46px]'>
+              <Link href={''}>Constructies</Link>
+            </li>
+            <li className='pl-[40px]'>
+              <Link href={''}>Machine bouw</Link>
+            </li>
+            <Link href={''} className='ml-[36px]'>
+              <div className='btn h-[52px] w-[223px] rounded-[5px] bg-[#E98A14]  pl-[41px] pr-[39px] text-[18px] font-semibold tracking-tight text-white hover:bg-[#E98A14] hover:opacity-90 border-none'>
+                <span>Offerte aanvragen</span>
+              </div>
+            </Link>
+          </ul>
         </div>
-        <ul className='hidden items-center justify-center gap-[36px] text-[18px]/[43px] font-semibold text-[#182228] text-opacity-[0.75] lg:flex'>
-          <li className='lg:pl-[27.13px]'>
-            <Link href={''}>Aluminium hekken</Link>
-          </li>
-          <li>
-            <Link href={''}>Stalen hekken</Link>
-          </li>
-          <li>
-            <Link href={''}>Constructies</Link>
-          </li>
-          <li>
-            <Link href={''}>Machine bouw</Link>
-          </li>
-          <Link href={''}>
-            <div className='btn rounded-[5px] bg-[#E98A14] pl-[41px] pr-[39px] text-[18px]/[43px] font-semibold text-white hover:bg-[#E98A14] hover:opacity-90'>
-              Offerte aanvragen
-            </div>
-          </Link>
-        </ul>
 
         <MobileMenu handleClick={handleClick} />
       </div>

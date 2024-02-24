@@ -3,8 +3,8 @@ import React from 'react';
 
 const FooterDesktop = () => {
   return (
-    <>
-      <div className='hidden z-0 h-[866px] bg-[#182228] md:flex md:px-[180px] xl:px-[360px] relative bottom-[314px]'>
+    <div className='bg-[#182228] hidden z-0  md:flex justify-center relative bottom-[1270px] px-[35px] height-footer'>
+      <div className=''>
         <div className='flex w-full flex-row items-start justify-between px-[35px] md:mt-[97px] md:px-0'>
           {/* <div className='flex w-full justify-between'> */}
           <div>
@@ -13,7 +13,7 @@ const FooterDesktop = () => {
             </h2>
           </div>
 
-          <div className='relative right-0 flex pl-[35px] text-[#FFFFFF] md:mt-[50px]'>
+          <div className='relative right-0 lg:flex pl-[35px] text-[#FFFFFF] md:mt-[50px] hidden '>
             <svg
               version='1.0'
               xmlns='http://www.w3.org/2000/svg'
@@ -65,8 +65,8 @@ const FooterDesktop = () => {
           </div>
         </div>
 
-        <div className='absolute mt-[210px] flex  flex-col'>
-          <div className='flex w-full flex-row justify-between gap-[100px] border-b-[1px] border-white border-opacity-20 pb-[175px]'>
+        <div className='relative top-[-80px] flex  flex-col'>
+          <div className='flex w-full flex-row justify-between gap-[50px] lg:gap-[100px] border-b-[1px] border-white border-opacity-20 pb-[135px]'>
             <div>
               <div className='relative mb-[45px] flex justify-start text-[31px] font-semibold tracking-tight text-white'>
                 <h4>Belas VOF</h4>
@@ -76,9 +76,6 @@ const FooterDesktop = () => {
                 <p className='text-[15px]/[35px] font-normal tracking-tight text-white'>
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                   diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                  justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-                  sea
                 </p>
               </div>
             </div>
@@ -151,7 +148,7 @@ const FooterDesktop = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

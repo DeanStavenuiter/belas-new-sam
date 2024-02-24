@@ -21,20 +21,19 @@ body {
       rgba(24, 34, 40, 0.6) 52%,
       rgba(24, 34, 40, 0) 100%
     ),
-    url('/hero-img.webp');
-    
+    url('/BannerMobile.png');
 }
 
 @media (min-width: 640px) {
   .bg-hero-img {
     background-image: linear-gradient(
         90deg,
-        #182228 0%,
-        #182228 13%,
-        #18222899 52%,
-        #18222800 100%
+        rgb(24, 34, 40, 0.9) 0%,
+        rgb(24, 34, 40, 0.9) 13%,
+        rgba(24, 34, 40, 0.6) 52%,
+        rgba(24, 34, 40, 0) 100%
       ),
-      url('/hero-img.webp');
+      url('/BannerMobile.png');
   }
 }
 
@@ -203,7 +202,7 @@ body {
   flex: 0 0 auto;
 }
 
-.chevron-transform{
+.chevron-transform {
   transform: matrix(0, 1, -1, 0, 0, 0);
 }
 
@@ -331,20 +330,6 @@ body {
   max-width: unset;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (min-width: 730px) {
   .bg-man-phone {
     background-position-x: 0px;
@@ -377,7 +362,6 @@ body {
   }
 }
 
-
 /* chevron animation containers */
 
 .chevron-animation {
@@ -385,12 +369,10 @@ body {
 }
 
 .hovered:hover .chevron-animation {
-  transform: translateX(
-    15px
-  ); 
+  transform: translateX(15px);
 }
 
-.hovered:hover .text-underline-card{
+.hovered:hover .text-underline-card {
   text-decoration: underline;
 }
 
@@ -413,8 +395,8 @@ body {
 .image-container {
   height: auto;
   position: relative;
-  z-index: 99;
-  bottom: 308px;
+  z-index: 5;
+  bottom: 309px;
   left: 48%;
 }
 
@@ -431,7 +413,6 @@ body {
   border-bottom: solid 0.5px #e98a14;
   padding-bottom: 3px;
 }
-
 
 /* mobile menu animation */
 
@@ -462,8 +443,44 @@ body {
 }
 
 .mobile-menu {
+  transform: translateX(100%);
   animation-duration: 0.5s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
 }
 
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0); /* Transparent black */
+  z-index: 49; /* Make sure it's behind the menu */
+}
+
+
+
+@media (min-width: 770px) {
+  .height-footer {
+    height: 900px;
+  }
+}
+
+@media (min-width: 800px) {
+  .height-footer {
+    height: 830px;
+  }
+}
+
+@media (min-width: 805px) {
+  .height-footer {
+    height: 800px;
+  }
+}
+
+@media (min-width: 1165px) {
+  .height-footer {
+    height: 680px;
+  }
+}

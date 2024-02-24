@@ -10,9 +10,8 @@ interface menuProps {
 
 const MobileMenu = ({ handleClick }: menuProps) => {
   return (
-    <>
-      <div>
-        <ul className='flex w-full flex-row items-center justify-center gap-[10px] lg:hidden'>
+    <div className='flex justify-center padding-content w-full lg:hidden'>
+        <ul className='flex flex-row items-center gap-[10px] '>
           <li>
             <Link href={''}>
               <div className='btn w-[169px] rounded-[5px] border-none bg-[#E4E4E4]'>
@@ -45,8 +44,7 @@ const MobileMenu = ({ handleClick }: menuProps) => {
             </div>
           </li>
         </ul>
-      </div>
-    </>
+    </div>
   );
 };
 

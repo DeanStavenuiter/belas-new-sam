@@ -4,8 +4,8 @@ import React from 'react';
 
 const GrijzeBar = () => {
   return (
-    <>
-      <div className='relative top-0 z-20 flex h-[55px] w-full items-center justify-center bg-[#F5F5F6]  pl-[0] text-[#182228] sm:bg-[#40494E] sm:bg-opacity-[0.05] lg:justify-normal lg:pl-[3%] xl:pl-[5%] 2xl:pl-[18.75%]'>
+    <div className='flex justify-center bg-[#F5F5F6]  padding-content relative z-20'>
+      <div className='relative top-0 z-40 flex h-[55px] w-full items-center justify-center sm:bg-[#40494E] text-[#182228] sm:bg-opacity-[0.05]'>
         <ul className=' flex justify-center'>
           <li className='hidden items-center gap-[4.3px] xl:flex '>
             <svg
@@ -119,7 +119,7 @@ const GrijzeBar = () => {
       </div>
 
       <div className='absolute top-0 z-10 flex h-[55px] w-full items-center justify-center bg-[#FFFFFF]'></div>
-    </>
+    </div>
   );
 };
 

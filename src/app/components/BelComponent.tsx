@@ -44,7 +44,7 @@ const BelOns = () => {
         </div>
       </div>
       {/* blauwe balk */}
-      <div className='flex h-[67px] gap-[10px] fixed bottom-0 bg-[#1A3055] px-[35px] py-[11px] sm:hidden'>
+      <div className='flex h-[67px] gap-[10px] fixed bottom-0 bg-[#1A3055] px-[35px] py-[11px] w-full justify-center sm:hidden'>
         <div className='btn w-[175px] border-none bg-[#4CA701] font-semibold text-white hover:bg-[#4CA701]'>
           Gratis offerte
         </div>

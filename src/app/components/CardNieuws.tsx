@@ -14,7 +14,7 @@ const CardNieuws = ({ imgSrc, title, imgBgClass,href }: CardNieuwsProps) => {
     <Link href={''} className='text-underline-orange'>
       <div className=''>
         <div
-          className={`flex h-[250px]  w-[314px] flex-col ${imgBgClass} mb-[29px] rounded-[5px]`}
+          className={`flex h-[250px]  w-[314px] md:w-[477px] md:h-[379px] flex-col ${imgBgClass} mb-[29px] rounded-[5px]`}
         ></div>
 
         <div>

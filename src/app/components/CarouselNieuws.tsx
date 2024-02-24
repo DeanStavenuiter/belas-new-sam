@@ -10,23 +10,30 @@ const CarouselNieuws = () => {
   const cards = [
     <CardNieuws
       key={1}
-      imgSrc='project1.jpg'
+      imgSrc='project5.jpg'
       title='Hier komt de titel van het blog'
-      imgBgClass={'bg-project-1'}
+      imgBgClass={'bg-project-5'}
       href=''
     />,
     <CardNieuws
       key={2}
-      imgSrc='project2.jpg'
+      imgSrc='project3.jpg'
       title='Hier komt de titel van het blog'
-      imgBgClass={'bg-project-2'}
+      imgBgClass={'bg-project-3'}
       href=''
     />,
     <CardNieuws
       key={3}
-      imgSrc='project3.jpg'
+      imgSrc='project4.jpg'
       title='Hier komt de titel van het blog'
-      imgBgClass={'bg-project-3'}
+      imgBgClass={'bg-project-4'}
+      href=''
+    />,
+    <CardNieuws
+      key={4}
+      imgSrc='project6.jpg'
+      title='Hier komt de titel van het blog'
+      imgBgClass={'bg-project-6'}
       href=''
     />,
   ];
@@ -43,15 +50,16 @@ const CarouselNieuws = () => {
   return (
     <>
       <div
-        className={`flex w-full flex-col overflow-y-hidden overflow-x-scroll `}
+        className={`flex w-[430px] flex-col overflow-y-hidden overflow-x-scroll
+        lg:w-[800px] xl:w-[1200px] `}
         onScroll={handleScroll}
         ref={cardsContainerRef}
       >
-        <div className={`flex flex-row justify-start pl-[035px] md:pl-0`}>
+        <div className={`flex flex-row justify-center sm:justify-start pl-[735px] sm:pl-[035px] md:pl-0`}>
           {cards.map((card, index) => (
             <div
               key={index}
-              className={` ${index === currentIndex ? 'active' : ''} pr-[35px] md:pr-[25px]`}
+              className={` ${index === currentIndex ? 'active' : ''} md:pr-[35px] pr-[28px]`}
             >
               {card}
             </div>
