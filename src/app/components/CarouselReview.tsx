@@ -61,7 +61,7 @@ const CarouselReview = () => {
           ))}
         </div>
       </div>
-      <div className='flex flex-row md:hidden justify-center gap-2'>
+      <div className='flex flex-row lg:hidden justify-center gap-2'>
         {cards.map((card, index) => (
           <div key={index} className='pb-4'>
             <div

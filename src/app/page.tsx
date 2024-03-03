@@ -13,15 +13,15 @@ export default function Home() {
   // const device = useDevice()
 
   return (
-    <main className='h-[calc(100%+4000px)]'>
-      <Navbar />
-
+    <main
+    // className='h-[calc(100vh - 4000px)]'
+    >
       {/* hero img */}
-      <div className='relative h-[370px] overflow-x-hidden overflow-y-hidden sm:h-[unset]'>
-        <div className='bg-hero-img sm:bg-hero-img-desktop relative  left-[-155px] top-[-232px] h-[602px] w-[901px] sm:left-0 sm:right-0 sm:top-[-600px] sm:h-[1281px] sm:w-[1920px]'></div>
+      <div className='overflow-x-hidden '>
+        <div className='bg-hero-img sm:bg-hero-img-desktop relative left-[-155px] top-[-103px] h-[602px] w-[901px] sm:left-0 sm:right-0 sm:top-[-600px] sm:h-[1281px] sm:w-[1920px]'></div>
       </div>
 
-      <div className='relative top-[-294px] flex justify-center sm:top-[-1122px] sm:justify-start'>
+      <div className='relative top-[-373px] flex justify-center sm:top-[-1122px] sm:justify-start'>
         <div className=' flex flex-col px-[35px] text-center sm:left-0 sm:justify-center sm:px-0 sm:pl-[10%] sm:text-left lg:pl-[3%] xl:pl-[5%] 2xl:pl-[18.75%]'>
           <span className='bolt text-[46px] font-black uppercase tracking-tight text-[#FFFFFF] md:text-[64px]/[155px] '>
             beter laswerk
@@ -29,7 +29,7 @@ export default function Home() {
           <span className='relative top-0 mb-[30px] text-[23px] font-normal text-[#FFFFFF] sm:text-[32px]'>
             Sinds 1997
           </span>
-          <div className='relative top-[-20px] w-full'>
+          <div className='relative w-full'>
             <div className='inline-flex w-fit items-center justify-center gap-[13.21px] border-b text-center text-[#FFFFFF]'>
               <span className='text-[14px]/[22px] '>Offerte aanvragen</span>
 
@@ -49,65 +49,68 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Navbar />
 
-      <div className='flex justify-center relative top-[-165px] sm:top-[0px] '>
-        <div className='relative m-[35px] mt-[46px] flex flex-col items-center justify-between sm:top-[-775px] sm:gap-[35px] md:top-[-849px] md:w-[1200px] xl:flex-row xl:items-start'>
-          {/* grijz blok met hekwerk */}
-          <div className='bg-hek hovered mb-[35px] flex h-[160px] w-full flex-col rounded-[5px] bg-[#E9EDF3] sm:h-[250px] sm:w-[575px]'>
-            <div className='px-[35px] pb-[26px] md:pt-[35px]  sm:top-[50px]'>
-              <span className='text-[40px]/[104px] font-black uppercase tracking-tight text-[#1C355D] text-opacity-[0.03] sm:text-[69px]/[179px]'>
-                hekwerken
-              </span>
-              <div className='relative bottom-[3px] flex flex-row items-center justify-between sm:bottom-[39px]'>
-                <span className='text-underline-card bottom-0 text-[22px] font-semibold tracking-tight text-[#1C355D]'>
-                  Hekwerken
+      <div className='absolute top-[485px] w-full bg-white sm:top-[590px]'>
+        <div className='relative  flex justify-center sm:top-[0px] '>
+          <div className='relative flex flex-col items-center justify-between gap-[30px] p-[35px] pt-[30px] sm:gap-[35px] sm:pt-[46px] md:w-[1200px] xl:flex-row xl:items-start'>
+            {/* grijz blok met hekwerk */}
+            <div className='bg-hek hovered flex h-[160px] w-full flex-col rounded-[5px] bg-[#E9EDF3] pb-[35px] sm:h-[250px] sm:w-[575px]'>
+              <div className='w-[360px] px-[35px] pb-[26px]  sm:top-[50px] md:pt-[35px]'>
+                <span className='text-[40px]/[104px] font-black uppercase tracking-tight text-[#1C355D] text-opacity-[0.03] sm:text-[69px]/[179px]'>
+                  hekwerken
                 </span>
-                <span className=''>
-                  <Image
-                    src='chevron.svg'
-                    width={20}
-                    height={23}
-                    alt='chevron'
-                    className='sm:hidden'
-                  />
-                  <Image
-                    src='chevron.svg'
-                    width={30}
-                    height={33}
-                    alt='chevron'
-                    className='chevron-animation hidden sm:block'
-                  />
-                </span>
+                <div className='relative bottom-[3px] flex flex-row items-center justify-between sm:bottom-[39px]'>
+                  <span className='text-underline-card bottom-0 text-[22px] font-semibold tracking-tight text-[#1C355D]'>
+                    Hekwerken
+                  </span>
+                  <span className=''>
+                    <Image
+                      src='chevron.svg'
+                      width={20}
+                      height={23}
+                      alt='chevron'
+                      className='sm:hidden'
+                    />
+                    <Image
+                      src='chevron.svg'
+                      width={30}
+                      height={33}
+                      alt='chevron'
+                      className='chevron-animation hidden sm:block'
+                    />
+                  </span>
+                </div>
               </div>
             </div>
-          </div>
 
-          {/* grijz blok met trap */}
-          <div className='bg-trap hovered mb-[35px] flex h-[160px] w-full flex-col rounded-[5px] bg-[#E9EDF3] sm:h-[250px] sm:w-[575px]'>
-            <div className='px-[35px] pb-[26px] md:pt-[35px] sm:top-[50px]'>
-              <span className='text-[40px]/[104px] font-black uppercase tracking-tight text-[#1C355D] text-opacity-[0.03] sm:text-[69px]/[179px]'>
-                constructies
-              </span>
-              <div className='relative bottom-[3px] flex flex-row items-center justify-between sm:bottom-[39px]'>
-                <span className='text-underline-card bottom-0 text-[22px] font-semibold tracking-tight text-[#1C355D]'>
-                  Constructies
+            {/* grijz blok met trap */}
+            <div className='bg-trap hovered mb-[35px] flex h-[160px] w-full flex-col rounded-[5px] bg-[#E9EDF3] sm:h-[250px] sm:w-[575px]'>
+              <div className='w-[360px] px-[35px] pb-[26px] sm:top-[50px] md:pt-[35px]'>
+                <span className='text-[40px]/[104px] font-black uppercase tracking-tight text-[#1C355D] text-opacity-[0.03] sm:text-[69px]/[179px]'>
+                  constructies
                 </span>
-                <span className=''>
-                  <Image
-                    src='chevron.svg'
-                    width={20}
-                    height={23}
-                    alt='chevron'
-                    className='sm:hidden'
-                  />
-                  <Image
-                    src='chevron.svg'
-                    width={30}
-                    height={33}
-                    alt='chevron'
-                    className='chevron-animation hidden sm:block'
-                  />
-                </span>
+                <div className='relative bottom-[3px] flex flex-row items-center justify-between sm:bottom-[39px]'>
+                  <span className='text-underline-card bottom-0 text-[22px] font-semibold tracking-tight text-[#1C355D]'>
+                    Constructies
+                  </span>
+                  <span className=''>
+                    <Image
+                      src='chevron.svg'
+                      width={20}
+                      height={23}
+                      alt='chevron'
+                      className='sm:hidden'
+                    />
+                    <Image
+                      src='chevron.svg'
+                      width={30}
+                      height={33}
+                      alt='chevron'
+                      className='chevron-animation hidden sm:block'
+                    />
+                  </span>
+                </div>
               </div>
             </div>
           </div>
@@ -115,16 +118,16 @@ export default function Home() {
       </div>
 
       {/* belas vof tekst */}
-      <div className='flex justify-center'>
-        <div className='relative top-[-237px] mt-[80px] md:mt-[unset] mb-[110px] sm:top-[-207px]'>
-          <div className='relative flex items-center justify-center sm:top-[-642px]   '>
+      <div className='absolute left-0 right-0 top-[885px] flex justify-center sm:top-[1200px] xl:top-[995px]'>
+        <div className=' '>
+          <div className=' flex items-center justify-center    '>
             <span className=' text-[51px] font-black uppercase tracking-tight text-[#1C355D] opacity-[0.07] sm:text-[69px]'>
               belas vof
             </span>
           </div>
 
           {/* hekwerken & constructie tekst */}
-          <div className='relative flex flex-col items-center justify-center sm:top-[-642px] '>
+          <div className=' flex flex-col items-center justify-center  '>
             <h2 className='text-[30px] font-semibold tracking-tight text-[#1C355D] sm:text-[45px]'>
               Hekwerken & constructie
             </h2>
@@ -146,10 +149,10 @@ export default function Home() {
       </div>
 
       {/* Hekken tekst */}
-      <div className='relative top-[-268px] flex justify-center sm:top-[-873px] sm:px-[35px]'>
+      <div className='absolute left-0 right-0 top-[1186px] mt-[110px] flex justify-center sm:top-[1640px] sm:mt-[unset] sm:px-[35px] xl:top-[1435px]'>
         <div className='flex w-[1200px] flex-col items-center justify-center  sm:items-start'>
-          <div className='flex w-full flex-row items-center justify-center md:justify-between '>
-            <div className='flex flex-col items-center justify-center md:items-start'>
+          <div className='flex w-full flex-row items-center justify-center lg:justify-between '>
+            <div className='flex flex-col items-center justify-center lg:items-start'>
               <span className=' text-[51px] font-black uppercase tracking-tight text-[#1C355D] opacity-[0.07] sm:text-[69px] '>
                 hekken
               </span>
@@ -165,7 +168,7 @@ export default function Home() {
                 height='180px'
                 viewBox='0 0 200.000000 200.000000'
                 preserveAspectRatio='xMidYMid meet'
-                className=' relative right-[-80px] top-[-7px] hidden md:block'
+                className=' relative right-[-80px] top-[-7px] hidden lg:block'
               >
                 <g
                   transform='translate(0.000000,200.000000) scale(0.100000,-0.100000)'
@@ -189,7 +192,7 @@ export default function Home() {
                 height='180px'
                 viewBox='0 0 200.000000 200.000000'
                 preserveAspectRatio='xMidYMid meet'
-                className=' relative right-[-22px] top-[-7px] hidden md:block'
+                className=' relative right-[-22px] top-[-7px] hidden lg:block'
               >
                 <g
                   transform='translate(0.000000,200.000000) scale(0.100000,-0.100000)'
@@ -209,7 +212,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className='max-w-[720px] px-[35px] py-[27px] text-center md:max-w-[360px] md:px-0 lg:text-left '>
+          <div className='flex justify-center w-full max-w-[unset] lg:max-w-[720px] px-[35px] py-[27px] text-center md:px-0 xl:text-left '>
             <p>
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
               nonumy eirmod tempor invidunt ut
@@ -218,30 +221,29 @@ export default function Home() {
         </div>
       </div>
 
-      {/* <div className='relative top-[-268px] w-full overflow-x-hidden sm:top-[-873px] flex justify-center flex-col'> */}
-      <div className='relative top-[-268px] flex justify-center sm:top-[-873px] '>
+      <div className='absolute left-0  right-0 top-[1521px]  flex justify-center sm:top-[1961px] md:top-[1941px] xl:top-[1741px] '>
         <CarouselHekken />
       </div>
 
-      <div className='relative top-[-268px] bg-[#193155] px-[35px] sm:top-[-873px] sm:flex sm:justify-end sm:bg-[#ffffff] sm:px-[unset]'>
+      <div className='absolute left-0 right-0 top-[2171px]  bg-[#193155]  px-[35px] sm:top-[2612px] sm:flex sm:justify-end sm:bg-[#ffffff] sm:px-[unset] md:top-[2583px] xl:top-[2383px]'>
         <Portfolio />
       </div>
 
-      <div className='m relative top-[-268px]  flex justify-center sm:top-[-873px] md:justify-start md:pl-[35px] lg:justify-center lg:pl-[unset]'>
+      <div className='absolute left-0  right-0 top-[3498px] sm:top-[3989px] flex justify-center md:justify-start md:pl-[35px] lg:top-[3691px] xl:top-[3521px] lg:justify-center lg:pl-[unset]'>
         <Nieuws />
       </div>
 
-      <div className='relative top-[-268px] flex  justify-center sm:top-[-873px] sm:max-w-[750px] md:max-w-[unset] '>
+      <div className='absolute left-0  right-0 top-[4092px] sm:top-[4634px] flex justify-center sm:max-w-[750px] md:top-[4803px] md:max-w-[unset] lg:top-[4339px]'>
         <Reviews />
       </div>
 
-      <BlauweBalk />
       <BelOns />
 
-      <FooterDesktop />
-
-      <FooterMobile />
-      {/* </div> */}
+      <div className='absolute left-0 right-0 top-[4786px] sm:top-[5377px] md:top-[5562px]  lg:top-[5099px] h-[93%]'>
+        <BlauweBalk />
+        <FooterDesktop />
+        <FooterMobile />
+      </div>
     </main>
   );
 }

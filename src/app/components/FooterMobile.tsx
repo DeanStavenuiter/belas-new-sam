@@ -4,7 +4,7 @@ import React from 'react';
 export const FooterMobile = () => {
   return (
     <>
-      <div className='relative z-0 flex bg-[#182228] md:hidden md:px-[180px] xl:px-[360px] sm:bottom-[953px] bottom-[370px]'>
+      <div className='relative z-0 flex bg-[#182228] md:hidden md:px-[180px] xl:px-[360px]'>
         <div className='flex flex-col justify-center px-[35px] md:px-0 '>
           <span className='mt-[29px] text-[73px] font-black uppercase tracking-tight text-[#FFFFFF] opacity-[0.03] md:mt-[97px]'>
             Belas VOF

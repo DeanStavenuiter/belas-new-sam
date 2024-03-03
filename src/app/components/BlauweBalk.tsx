@@ -3,8 +3,8 @@ import React from 'react';
 
 const BlauweBalk = () => {
   return (
-    <div className='relative bottom-[370px] sm:bottom-[925px] '>
-      <div className=' relative z-[5] flex h-[232px] justify-center bg-[#1A3055] px-[35px] w-full sm:px-[unset] pt-[63px] md:rounded-br-[5px] md:rounded-tr-[5px] md:max-w-[85%]  lg:max-w-[65%] '>
+    <div className=''>
+      <div className=' relative z-[5] flex h-[232px] justify-center bg-[#1A3055] px-[35px] w-full sm:px-[unset] pt-[63px] md:rounded-br-[5px] md:rounded-tr-[5px] lg:max-w-[85%]  xl:max-w-[65%] '>
         <div className='flex flex-row gap-[30px]'>
           <div className='min-w-[212px] text-white'>
             <h3 className='text-[34px]/[34px] md:text-[52px] font-semibold tracking-tight'>

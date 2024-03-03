@@ -12,8 +12,8 @@ body {
 .bg-hero-img {
   background-repeat: no-repeat;
   background-size: 100%;
-  /* background-position-x: 38%;
-  background-position-y: 111%; */
+  background-position-x: 0;
+  background-position-y: 15%;
   background-image: linear-gradient(
       0deg,
       rgb(24, 34, 40, 0.9) 0%,

@@ -41,7 +41,7 @@ const Navbar = () => {
         className={` fixed bottom-0 right-0  top-0 z-50 w-[75%] bg-[#182228] lg:hidden ${menuOpen ? 'menu-open ' : menuOpen === null ? '' : 'menu-close'} mobile-menu overflow-y-scroll` }
       >
         <div
-          className='flex justify-end pr-[35px] pt-[47px]'
+          className='flex justify-end pr-[35px] pt-[35px]'
           onClick={handleClick}
         >
           <svg
@@ -204,7 +204,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className='flex mt-[152px] mb-[45px] text-white'>
+        <div className='flex my-[35px] text-white'>
           <div className='flex w-full flex-col justify-center gap-[20px] px-[45px]'>
             <div className='btn w-full border-none bg-[#E98A14] text-[16px] '>
               Gratis offerte ontvangen
@@ -253,7 +253,7 @@ const Navbar = () => {
       </div>
 
       {/* white menu bar */}
-      <div className='shadow-menu-white relative z-10 flex h-[73px] w-full items-center  justify-center bg-[#FFFFFF] lg:bottom-0 padding-content'>
+      <div className='shadow-menu-white absolute top-[53px] z-10 flex h-[73px] w-full items-center  justify-center bg-[#FFFFFF] lg:bottom-0 padding-content'>
         <div className='w-[1200px] flex-row  items-center justify-center hidden lg:flex'>
           <div className='z-10 mr-[173px] mt-[43px] hidden rounded-[5px] bg-white px-[30px] py-[16px] xl:block'>
             <Image

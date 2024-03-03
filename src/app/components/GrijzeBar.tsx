@@ -4,7 +4,7 @@ import React from 'react';
 
 const GrijzeBar = () => {
   return (
-    <div className='flex justify-center bg-[#F5F5F6]  padding-content relative z-20'>
+    <div className='flex justify-center bg-[#F5F5F6]  padding-content absolute top-0 w-full z-20'>
       <div className='relative top-0 z-40 flex h-[55px] w-full items-center justify-center sm:bg-[#40494E] text-[#182228] sm:bg-opacity-[0.05]'>
         <ul className=' flex justify-center'>
           <li className='hidden items-center gap-[4.3px] xl:flex '>

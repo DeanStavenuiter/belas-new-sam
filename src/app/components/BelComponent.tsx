@@ -26,7 +26,7 @@ const BelOns = () => {
 
               <div className='flex flex-col'>
                 <div className='bg-man-phone h-[155px]'></div>
-                <div className='shadow-circle btn h-[30px] min-h-0 w-[125px] rounded-[100px] border-none bg-white '>
+                <div className='shadow-circle btn h-[30px] min-h-0 w-[125px] rounded-[100px] border-none hover:bg-white bg-white '>
                   <span className='text-[12px] font-normal tracking-tight'>
                     Meer informatie?
                   </span>

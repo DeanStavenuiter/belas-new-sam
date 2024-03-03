@@ -235,7 +235,7 @@ const CarouselPortfolio = () => {
           </div>
         </div>
       </div>
-      <div className='mt-[40px] flex flex-row  justify-center  gap-[9px] md:justify-start lg:hidden'>
+      <div className='mt-[40px] flex flex-row  justify-center  gap-[9px] lg:justify-start lg:hidden'>
         <div
           className=' flex h-[48px] w-[48px] items-center justify-center rounded-[5px] border-none bg-[#182228] hover:cursor-pointer'
           onClick={handleClickPrevSmall}

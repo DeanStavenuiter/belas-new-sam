@@ -3,7 +3,7 @@ import React from 'react';
 
 const FooterDesktop = () => {
   return (
-    <div className='bg-[#182228] hidden z-0  md:flex justify-center relative bottom-[1270px] px-[35px] height-footer'>
+    <div className='bg-[#182228] hidden z-0  md:flex justify-center relative top-[-343px] px-[35px] height-footer'>
       <div className=''>
         <div className='flex w-full flex-row items-start justify-between px-[35px] md:mt-[97px] md:px-0'>
           {/* <div className='flex w-full justify-between'> */}

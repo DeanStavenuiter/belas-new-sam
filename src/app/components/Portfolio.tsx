@@ -3,8 +3,8 @@ import CarouselPortfolio from './CarouselPortfolio';
 
 const Portfolio = () => {
   return (
-    <div className='relative rounded-bl-[5px] w-full rounded-tl-[5px] bg-[#193155] py-[80px] sm:right-0 md:w-[81%] md:pl-[143px]'>
-      <div className='flex max-w-[1200px] items-center justify-center md:justify-start '>
+    <div className='relative rounded-bl-[5px] w-full rounded-tl-[5px] bg-[#193155] py-[80px] md:right-0 lg:w-[81%] lg:pl-[143px]'>
+      <div className='flex max-w-[1200px] items-center justify-center lg:justify-start '>
         <span className='text-[51px] font-black uppercase tracking-tight text-white opacity-[0.07] sm:text-[69px]'>
           Portfolio
         </span>
@@ -59,14 +59,14 @@ const Portfolio = () => {
           </svg>
         </div>
       </div>
-      <div className='mb-[40px] flex justify-center md:justify-start'>
+      <div className='mb-[40px] flex justify-center lg:justify-start'>
         <h2 className='text-[30px] font-semibold tracking-tight text-white sm:text-[45px]'>
           Eerder leverde wij...
         </h2>
       </div>
 
-      <div className='mb-[40px] flex justify-center md:justify-normal'>
-        <p className=' max-w-[360px] text-center text-[15px] text-white md:text-left'>
+      <div className='mb-[40px] flex justify-center lg:justify-normal'>
+        <p className='  md:max-w-[360px] text-center text-[15px] text-white lg:text-left'>
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy eirmod tempor invidunt ut
         </p>
