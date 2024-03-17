@@ -8,16 +8,16 @@ import { cards } from '@/cards/hekken';
 
 const page = () => {
   return (
-    <div>
+    <div className='max-h-[-webkit-fill-available]'>
       <Navbar />
 
       <div className='flex justify-center'>
         <div className='max-w-[1200px]'>
-          <div className='mb-[300px] mt-[205px] flex flex-col justify-center sm:top-[1640px] px-[35px] lg:px-[unset]'>
+          <div className='mb-[204px] mt-[205px] flex flex-col justify-center px-[35px] sm:top-[1640px] lg:px-[unset]'>
             <div className='flex w-[1200px] flex-col items-center justify-center  sm:items-start'>
               <div className='flex w-full flex-row items-center justify-center lg:justify-between '>
                 <div className='flex flex-col items-center justify-center lg:items-start'>
-                  <h2 className='text-[30px] font-semibold tracking-tight text-[#1C355D] sm:text-[45px]'>
+                  <h2 className='text-[30px] font-semibold tracking-normal text-[#1C355D] sm:text-[45px]'>
                     Aluminium hekken
                   </h2>
                 </div>
@@ -86,10 +86,86 @@ const page = () => {
 
             <div className='flex flex-wrap justify-center gap-[46px] '>
               {cards.map((card, index) => (
-                <div key={index} className='max-w-[369px] '>
-                  {card}{' '}
+                <div key={index} className=''>
+                  {card}
                 </div>
               ))}
+            </div>
+
+            <div className='flex justify-center'>
+              <div className=''>
+                <div className='w-[855px]'>
+                  <div className='mb-[30px]'>
+                    <h3 className='text-[35px] font-semibold tracking-normal text-[#1C355D]'>
+                      Lorem ipsum dolor sit amet
+                    </h3>
+                  </div>
+                  <div className='mb-[30px]'>
+                    <p className='text-[15px]/[25px] font-normal text-[#182228]'>
+                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                      sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                      magna aliquyam erat Lorem ipsum dolor sit amet, consetetur
+                      sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                      ut labore et dolore magna aliquyam erat Lorem ipsum dolor
+                      sit amet, consetetur sadipscing elitr, sed diam nonumy
+                      eirmod tempor invidunt ut labore et dolore magna aliquyam
+                      erat Lorem ipsum dolor sit amet, consetetur sadipscing
+                      elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                      dolore magna aliquyam erat
+                    </p>
+                  </div>
+                </div>
+
+                <div className=''>
+                <div className='w-[855px]'>
+                  <div className='mb-[30px]'>
+                    <h3 className='text-[35px] font-semibold tracking-normal text-[#1C355D]'>
+                      Lorem ipsum dolor sit amet
+                    </h3>
+                  </div>
+                  <div className='mb-[30px]'>
+                    <p className='text-[15px]/[25px] font-normal text-[#182228]'>
+                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                      sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                      magna aliquyam erat Lorem ipsum dolor sit amet, consetetur
+                      sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                      ut labore et dolore magna aliquyam erat Lorem ipsum dolor
+                      sit amet, consetetur sadipscing elitr, sed diam nonumy
+                      eirmod tempor invidunt ut labore et dolore magna aliquyam
+                      erat Lorem ipsum dolor sit amet, consetetur sadipscing
+                      elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                      dolore magna aliquyam erat
+                    </p>
+                  </div>
+                </div>
+                </div>
+
+                <div className=''>
+                <div className='w-[855px]'>
+                  <div className='mb-[30px]'>
+                    <h3 className='text-[35px] font-semibold tracking-normal text-[#1C355D]'>
+                      Lorem ipsum dolor sit amet
+                    </h3>
+                  </div>
+                  <div>
+                    <p className='text-[15px]/[25px] font-normal text-[#182228]'>
+                      Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                      sed diam nonumy eirmod tempor invidunt ut labore et dolore
+                      magna aliquyam erat Lorem ipsum dolor sit amet, consetetur
+                      sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                      ut labore et dolore magna aliquyam erat Lorem ipsum dolor
+                      sit amet, consetetur sadipscing elitr, sed diam nonumy
+                      eirmod tempor invidunt ut labore et dolore magna aliquyam
+                      erat Lorem ipsum dolor sit amet, consetetur sadipscing
+                      elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+                      dolore magna aliquyam erat
+                    </p>
+                  </div>
+                </div>
+                </div>
+
+
+              </div>
             </div>
           </div>
         </div>

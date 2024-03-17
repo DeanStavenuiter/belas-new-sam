@@ -114,10 +114,10 @@ const page = () => {
         <div className='flex w-[1200px] flex-col items-center justify-center  sm:items-start'>
           <div className='flex w-full flex-row items-center justify-center lg:justify-between '>
             <div className='flex flex-col items-center justify-center lg:items-start'>
-              <span className=' text-[51px] font-black uppercase tracking-tight text-[#1C355D] opacity-[0.07] sm:text-[69px] '>
+              <span className=' text-[51px] font-black uppercase tracking-normal text-[#1C355D] opacity-[0.07] sm:text-[69px] '>
                 Blog
               </span>
-              <h2 className='text-[30px] font-semibold tracking-tight text-[#1C355D] sm:text-[45px]'>
+              <h2 className='text-[30px] font-semibold tracking-normal text-[#1C355D] sm:text-[45px]'>
                 Blijft u op de hoogte?
               </h2>
             </div>

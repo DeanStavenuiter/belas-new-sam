@@ -11,17 +11,17 @@ const CardReview = ({ header, name, text }: CardReviewProps) => {
   return (
     <div className='my-[40px] rounded-[5px]'>
       <div className='shadow-review hover-effect-review flex h-[335px] w-[360px] flex-col rounded-[5px] pl-[51px] pt-[48px] '>
-        <h5 className='mb-[50px] pr-[33px] text-[22px] font-semibold tracking-tight text-[#6187C3]'>
+        <h5 className='mb-[50px] pr-[33px] text-[22px] font-semibold tracking-normal text-[#6187C3]'>
           {header}
         </h5>
 
-        <p className='mb-[38px] max-w-[258px] text-left text-[15px] font-normal tracking-tight text-[#182228]'>
+        <p className='mb-[38px] max-w-[258px] text-left text-[15px] font-normal tracking-normal text-[#182228]'>
           {text}
         </p>
 
         <div className='flex flex-row items-center gap-2'>
           <span className='h-0 w-[11px] border-[0.5px] border-solid border-[#1C355C]'></span>
-          <span className='text-[18px] font-semibold tracking-tight text-[#1C355D]'>
+          <span className='text-[18px] font-semibold tracking-normal text-[#1C355D]'>
             {name}
           </span>
         </div>

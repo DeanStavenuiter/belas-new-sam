@@ -23,7 +23,7 @@ export default function Home() {
 
       <div className='relative top-[-373px] flex justify-center sm:top-[-1122px] sm:justify-start'>
         <div className=' flex flex-col px-[35px] text-center sm:left-0 sm:justify-center sm:px-0 sm:pl-[10%] sm:text-left lg:pl-[3%] xl:pl-[5%] 2xl:pl-[18.75%]'>
-          <span className='bolt text-[46px] font-black uppercase tracking-tight text-[#FFFFFF] md:text-[64px]/[155px] '>
+          <span className='bolt text-[46px] font-black uppercase tracking-normal text-[#FFFFFF] md:text-[64px]/[155px] '>
             beter laswerk
           </span>
           <span className='relative top-0 mb-[30px] text-[23px] font-normal text-[#FFFFFF] sm:text-[32px]'>
@@ -57,11 +57,11 @@ export default function Home() {
             {/* grijz blok met hekwerk */}
             <div className='bg-hek hovered flex h-[160px] w-full flex-col rounded-[5px] bg-[#E9EDF3] pb-[35px] sm:h-[250px] sm:w-[575px]'>
               <div className='w-[360px] px-[35px] pb-[26px]  sm:top-[50px] md:pt-[35px]'>
-                <span className='text-[40px]/[104px] font-black uppercase tracking-tight text-[#1C355D] text-opacity-[0.03] sm:text-[69px]/[179px]'>
+                <span className='text-[40px]/[104px] font-black uppercase tracking-normal text-[#1C355D] text-opacity-[0.03] sm:text-[69px]/[179px]'>
                   hekwerken
                 </span>
                 <div className='relative bottom-[3px] flex flex-row items-center justify-between sm:bottom-[39px]'>
-                  <span className='text-underline-card bottom-0 text-[22px] font-semibold tracking-tight text-[#1C355D]'>
+                  <span className='text-underline-card bottom-0 text-[22px] font-semibold tracking-normal text-[#1C355D]'>
                     Hekwerken
                   </span>
                   <span className=''>
@@ -87,11 +87,11 @@ export default function Home() {
             {/* grijz blok met trap */}
             <div className='bg-trap hovered mb-[35px] flex h-[160px] w-full flex-col rounded-[5px] bg-[#E9EDF3] sm:h-[250px] sm:w-[575px]'>
               <div className='w-[360px] px-[35px] pb-[26px] sm:top-[50px] md:pt-[35px]'>
-                <span className='text-[40px]/[104px] font-black uppercase tracking-tight text-[#1C355D] text-opacity-[0.03] sm:text-[69px]/[179px]'>
+                <span className='text-[40px]/[104px] font-black uppercase tracking-normal text-[#1C355D] text-opacity-[0.03] sm:text-[69px]/[179px]'>
                   constructies
                 </span>
                 <div className='relative bottom-[3px] flex flex-row items-center justify-between sm:bottom-[39px]'>
-                  <span className='text-underline-card bottom-0 text-[22px] font-semibold tracking-tight text-[#1C355D]'>
+                  <span className='text-underline-card bottom-0 text-[22px] font-semibold tracking-normal text-[#1C355D]'>
                     Constructies
                   </span>
                   <span className=''>
@@ -121,14 +121,14 @@ export default function Home() {
       <div className='absolute left-0 right-0 top-[885px] flex justify-center sm:top-[1200px] xl:top-[995px]'>
         <div className=' '>
           <div className=' flex items-center justify-center    '>
-            <span className=' text-[51px] font-black uppercase tracking-tight text-[#1C355D] opacity-[0.07] sm:text-[69px]'>
+            <span className=' text-[51px] font-black uppercase tracking-normal text-[#1C355D] opacity-[0.07] sm:text-[69px]'>
               belas vof
             </span>
           </div>
 
           {/* hekwerken & constructie tekst */}
           <div className=' flex flex-col items-center justify-center  '>
-            <h2 className='text-[30px] font-semibold tracking-tight text-[#1C355D] sm:text-[45px]'>
+            <h2 className='text-[30px] font-semibold tracking-normal text-[#1C355D] sm:text-[45px]'>
               Hekwerken & constructie
             </h2>
             <div className='max-w-[720px] px-[35px] py-[27px] text-center text-[15px] sm:flex sm:justify-center'>
@@ -153,10 +153,10 @@ export default function Home() {
         <div className='flex w-[1200px] flex-col items-center justify-center  sm:items-start'>
           <div className='flex w-full flex-row items-center justify-center lg:justify-between '>
             <div className='flex flex-col items-center justify-center lg:items-start'>
-              <span className=' text-[51px] font-black uppercase tracking-tight text-[#1C355D] opacity-[0.07] sm:text-[69px] '>
+              <span className=' text-[51px] font-black uppercase tracking-normal text-[#1C355D] opacity-[0.07] sm:text-[69px] '>
                 hekken
               </span>
-              <h2 className='text-[30px] font-semibold tracking-tight text-[#1C355D] sm:text-[45px]'>
+              <h2 className='text-[30px] font-semibold tracking-normal text-[#1C355D] sm:text-[45px]'>
                 Lorem ipsum dolor sit
               </h2>
             </div>

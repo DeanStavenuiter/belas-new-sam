@@ -37,7 +37,7 @@ const CardsProjecten = () => {
             onClick={() => goToPage(i)}
             className={`${i === currentPage ? 'active border-[#1A3055] text-[#182228]' : 'border-[#CFD4DC] text-[#CFD4DC]'} btn h-[50px] w-[50px] ${
               i === totalPages ? '' : 'mr-[15px]'
-            } text-[18px] font-semibold tracking-tight opacity-[0.75]`}
+            } text-[18px] font-semibold tracking-normal opacity-[0.75]`}
           >
             {i}
           </button>
@@ -47,7 +47,7 @@ const CardsProjecten = () => {
           <button
             key={i}
             onClick={() => goToPage(i)}
-            className='btn mr-[15px] h-[50px] w-[50px] border-[#CFD4DC] text-[18px] font-semibold tracking-tight text-[#CFD4DC] opacity-[0.75]'
+            className='btn mr-[15px] h-[50px] w-[50px] border-[#CFD4DC] text-[18px] font-semibold tracking-normal text-[#CFD4DC] opacity-[0.75]'
           >
             ...
           </button>
@@ -72,7 +72,7 @@ const CardsProjecten = () => {
         <button
           onClick={prevPage}
           disabled={currentPage === 1}
-          className='mr-[35px] text-[18px] font-semibold tracking-tight opacity-[0.75]'
+          className='mr-[35px] text-[18px] font-semibold tracking-normal opacity-[0.75]'
         >
           Vorige
         </button>
@@ -82,7 +82,7 @@ const CardsProjecten = () => {
         <button
           onClick={nextPage}
           disabled={currentPage === totalPages}
-          className='ml-[35px] text-[18px] font-semibold tracking-tight opacity-[0.75]'
+          className='ml-[35px] text-[18px] font-semibold tracking-normal opacity-[0.75]'
         >
           Volgende
         </button>

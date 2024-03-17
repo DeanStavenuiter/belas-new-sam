@@ -15,7 +15,7 @@ const ProjectPagina = () => {
             <div className='flex flex-col items-center justify-center  sm:items-start'>
               <div className='mb-[50px] flex w-full flex-row items-center justify-center xl:justify-between'>
                 <div className='flex flex-col items-center justify-center text-center lg:items-start xl:text-left '>
-                  <h2 className='text-[30px] font-semibold tracking-tight text-[#1C355D] sm:text-[45px]'>
+                  <h2 className='text-[30px] font-semibold tracking-normal text-[#1C355D] sm:text-[45px]'>
                     Naam van het project
                   </h2>
                 </div>
@@ -83,7 +83,7 @@ const ProjectPagina = () => {
             </div>
 
             <div className='flex w-full justify-center xl:justify-normal'>
-              <div className='btn mb-[74px] h-[53px] w-[201px] bg-[#1C355C]  tracking-tight hover:bg-[#1C355C]'>
+              <div className='btn mb-[74px] h-[53px] w-[201px] bg-[#1C355C]  tracking-normal hover:bg-[#1C355C]'>
                 <span className='text-[16px] font-medium text-white'>
                   Neem contact op
                 </span>
@@ -98,7 +98,7 @@ const ProjectPagina = () => {
             </div>
 
             <div className='mt-[102px] mb-[50px]'>
-              <h2 className='text-[35px] font-semibold tracking-tight text-[#1C355D] '>
+              <h2 className='text-[35px] font-semibold tracking-normal text-[#1C355D] '>
                 Hier komt een H2
               </h2>
             </div>

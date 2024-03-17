@@ -19,7 +19,7 @@ const BlogPost = () => {
           <div className='flex w-[1200px] flex-col items-center justify-center  sm:items-start'>
             <div className='flex w-full flex-row items-center justify-center lg:justify-between '>
               <div className='flex flex-col items-center justify-center lg:items-start'>
-                <h2 className='text-[30px] font-semibold tracking-tight text-[#1C355D] sm:text-[35px]'>
+                <h2 className='text-[30px] font-semibold tracking-normal text-[#1C355D] sm:text-[35px]'>
                   Hier komt de titel van de blog
                 </h2>
               </div>
@@ -104,7 +104,7 @@ const BlogPost = () => {
 
             <div className='max-w-[750px] text-[#1F2739]'>
               <div>
-                <h3 className='text-[20px] font-semibold tracking-tight'>
+                <h3 className='text-[20px] font-semibold tracking-normal'>
                   Lorem ipsum dolor sit amet, consetetur
                 </h3>
               </div>
@@ -134,7 +134,7 @@ const BlogPost = () => {
               <br />
 
               <div>
-                <h3 className='text-[20px] font-semibold tracking-tight text-[#1F2739]'>
+                <h3 className='text-[20px] font-semibold tracking-normal text-[#1F2739]'>
                   Lorem ipsum dolor sit amet, consetetur
                 </h3>
               </div>
@@ -157,7 +157,7 @@ const BlogPost = () => {
               <br />
 
               <div>
-                <h3 className='text-[20px] font-semibold tracking-tight text-[#1F2739]'>
+                <h3 className='text-[20px] font-semibold tracking-normal text-[#1F2739]'>
                   Lorem ipsum dolor sit amet, consetetur
                 </h3>
               </div>

@@ -77,13 +77,13 @@ const Form = ({ title, titleForm, color }: FormProps) => {
       </div>
 
       <div className='mb-[75px]'>
-        <h1 className='text-[45px] font-semibold tracking-tight text-[#1C355C]'>
+        <h1 className='text-[45px] font-semibold tracking-normal text-[#1C355C]'>
           {title}
         </h1>
       </div>
       <form className='shadow-form relative z-[5] max-w-[838px] rounded-[20px] border bg-white px-[15px] py-[48px] sm:pl-[96.96px] sm:pr-[76.96px]'>
         <div className='mb-[50px] flex h-full w-full justify-center'>
-          <h3 className='text-[30px] font-semibold tracking-tight text-[#1C355C]'>
+          <h3 className='text-[30px] font-semibold tracking-normal text-[#1C355C]'>
             {titleForm}
           </h3>
         </div>
@@ -172,7 +172,7 @@ const Form = ({ title, titleForm, color }: FormProps) => {
         <div className='mt-[18.09px]'>
           <button
             onClick={handleSubmitForm}
-            className={`btn flex h-[60px] w-[322px] items-center justify-center rounded-[5px] border-none bg-[${color}] px-[115px] py-[18px] text-[20px] font-semibold tracking-tight text-white hover:bg-[${color}]`}
+            className={`btn flex h-[60px] w-[322px] items-center justify-center rounded-[5px] border-none bg-[${color}] px-[115px] py-[18px] text-[20px] font-semibold tracking-normal text-white hover:bg-[${color}]`}
           >
             <span>
               {isLoading ? (

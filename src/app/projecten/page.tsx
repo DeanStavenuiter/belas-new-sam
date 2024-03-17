@@ -17,10 +17,10 @@ const page = () => {
             <div className='flex w-[1200px] flex-col items-center justify-center  xl:items-start'>
               <div className='flex w-full flex-row items-center justify-center xl:justify-between '>
                 <div className='flex flex-col items-center justify-center xl:items-start'>
-                  <span className=' text-[69px] font-black uppercase tracking-tight text-[#1C355D] opacity-[0.07] sm:text-[69px] '>
+                  <span className=' text-[69px] font-black uppercase tracking-normal text-[#1C355D] opacity-[0.07] sm:text-[69px] '>
                     Projecten
                   </span>
-                  <h2 className='text-[45px] font-semibold tracking-tight text-[#1C355D] sm:text-[45px]'>
+                  <h2 className='text-[45px] font-semibold tracking-normal text-[#1C355D] sm:text-[45px]'>
                     Eerder leverde wij...
                   </h2>
                 </div>

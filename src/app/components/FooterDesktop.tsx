@@ -8,7 +8,7 @@ const FooterDesktop = () => {
         <div className='flex w-full flex-row items-start justify-between px-[35px] md:mt-[97px] md:px-0'>
           {/* <div className='flex w-full justify-between'> */}
           <div>
-            <h2 className=' text-[129px] font-black uppercase tracking-tight text-[#FFFFFF] opacity-[0.03] '>
+            <h2 className=' text-[129px] font-black uppercase tracking-normal text-[#FFFFFF] opacity-[0.03] '>
               Belas VOF
             </h2>
           </div>
@@ -68,22 +68,22 @@ const FooterDesktop = () => {
         <div className='relative top-[-80px] flex  flex-col'>
           <div className='flex w-full flex-row justify-between gap-[50px] lg:gap-[100px] border-b-[1px] border-white border-opacity-20 pb-[135px]'>
             <div>
-              <div className='relative mb-[45px] flex justify-start text-[31px] font-semibold tracking-tight text-white'>
+              <div className='relative mb-[45px] flex justify-start text-[31px] font-semibold tracking-normal text-white'>
                 <h4>Belas VOF</h4>
               </div>
 
               <div className='max-w-[317px]'>
-                <p className='text-[15px]/[35px] font-normal tracking-tight text-white'>
+                <p className='text-[15px]/[35px] font-normal tracking-normal text-white'>
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                   diam nonumy eirmod tempor invidunt ut labore et dolore magna
                 </p>
               </div>
             </div>
             <div>
-              <div className='relative mb-[45px] flex justify-start text-[31px] font-semibold tracking-tight text-white'>
+              <div className='relative mb-[45px] flex justify-start text-[31px] font-semibold tracking-normal text-white'>
                 <h4>Service</h4>
               </div>
-              <div className='flex flex-row gap-[80px] text-[15px]/[35px] font-normal tracking-tight text-white '>
+              <div className='flex flex-row gap-[80px] text-[15px]/[35px] font-normal tracking-normal text-white '>
                 <div className=''>
                   <ul>
                     <li>
@@ -112,11 +112,11 @@ const FooterDesktop = () => {
                 </div>
               </div>
             </div>
-            <div className='mb-[45px] flex flex-col justify-start text-[31px] font-semibold tracking-tight text-white'>
+            <div className='mb-[45px] flex flex-col justify-start text-[31px] font-semibold tracking-normal text-white'>
               <div className='mb-[45px]'>
                 <h4>Kom langs!</h4>
               </div>
-              <div className='flex flex-row gap-[80px] text-[15px]/[25px] font-normal tracking-tight text-white '>
+              <div className='flex flex-row gap-[80px] text-[15px]/[25px] font-normal tracking-normal text-white '>
                 <div className=''>
                   <ul>
                     <li>
@@ -142,7 +142,7 @@ const FooterDesktop = () => {
               </div>
             </div>
           </div>
-          <div className='flex flex-row justify-center py-[35px] text-[15px]/[25px] font-normal tracking-tight text-white'>
+          <div className='flex flex-row justify-center py-[35px] text-[15px]/[25px] font-normal tracking-normal text-white'>
             <span>© 2024 | Website ontwikkeld door SAM Online</span>
             <span>Marketing & Webdesign.</span>
           </div>

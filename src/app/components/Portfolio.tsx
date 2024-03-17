@@ -5,7 +5,7 @@ const Portfolio = () => {
   return (
     <div className='relative rounded-bl-[5px] w-full rounded-tl-[5px] bg-[#193155] py-[80px] md:right-0 lg:w-[81%] lg:pl-[143px]'>
       <div className='flex max-w-[1200px] items-center justify-center lg:justify-start '>
-        <span className='text-[51px] font-black uppercase tracking-tight text-white opacity-[0.07] sm:text-[69px]'>
+        <span className='text-[51px] font-black uppercase tracking-normal text-white opacity-[0.07] sm:text-[69px]'>
           Portfolio
         </span>
         <div className='relative right-[-17px] flex-row hidden lg:flex'>
@@ -60,7 +60,7 @@ const Portfolio = () => {
         </div>
       </div>
       <div className='mb-[40px] flex justify-center lg:justify-start'>
-        <h2 className='text-[30px] font-semibold tracking-tight text-white sm:text-[45px]'>
+        <h2 className='text-[30px] font-semibold tracking-normal text-white sm:text-[45px]'>
           Eerder leverde wij...
         </h2>
       </div>

@@ -19,7 +19,7 @@ const CardNieuws = ({ imgSrc, title, imgBgClass, href, extendedClass  }: CardNie
         ></div>
 
         <div className='flex flex-row pb-[3px]'>
-          <div className='hover-effect flex  flex-row pb-[3px] text-[22px]/[] font-semibold tracking-tight text-[#1C355D] '>
+          <div className='hover-effect flex  flex-row pb-[3px] text-[22px]/[] font-semibold tracking-normal text-[#1C355D] '>
             <div>{title}</div>
             <div>
               <svg
