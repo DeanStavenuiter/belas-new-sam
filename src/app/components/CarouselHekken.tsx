@@ -12,31 +12,41 @@ const CarouselHekken = () => {
       imgBgClass='bg-hek-card'
       nameProduct='ASH-3015'
       price='399'
+      w={320}
+      h={530}
     />,
     <CardHekken
       key={2}
       imgBgClass='bg-hek-card'
       nameProduct='ASH-2070'
       price='499'
+      w={320}
+      h={530}
     />,
     <CardHekken
       key={3}
       imgBgClass='bg-hek-card'
       nameProduct='ASH-R25'
       price='299'
+      w={320}
+      h={530}
     />,
     <CardHekken
       key={4}
       imgBgClass='bg-hek-card'
       nameProduct='AGH-44.2/55.2'
       price='399'
+      w={320}
+      h={530}
     />,
     <CardHekken
-    key={4}
-    imgBgClass='bg-hek-card'
-    nameProduct='ASH-3015'
-    price='399'
-  />,
+      key={4}
+      imgBgClass='bg-hek-card'
+      nameProduct='ASH-3015'
+      price='399'
+      w={320}
+      h={530}
+    />,
   ];
 
   const handleScroll = () => {
@@ -57,7 +67,7 @@ const CarouselHekken = () => {
         ref={cardsContainerRef}
       >
         <div
-          className={`sm:scroll-none flex flex-row justify-left lg:w-[800px] xl:w-[1200px]`}
+          className={`sm:scroll-none justify-left flex flex-row lg:w-[800px] xl:w-[1200px]`}
         >
           {cards.map((card, index) => (
             <div

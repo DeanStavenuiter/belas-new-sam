@@ -223,10 +223,10 @@ const Navbar = () => {
         <div className='w-[1200px] '>
           <ul className='hidden items-center text-[18px]/[43px] font-semibold text-white sm:flex justify-center'>
             <li className=' xl:pl-0'>
-              <Link href={''}>Aluminium hekken</Link>
+              <Link href={'/hekken'}>Aluminium hekken</Link>
             </li>
             <li className='pl-[39px]'>
-              <Link href={''}>Stalen hekken</Link>
+              <Link href={'/hekken'}>Stalen hekken</Link>
             </li>
             <li className='pl-[46px]'>
               <Link href={''}>Constructies</Link>
@@ -235,15 +235,15 @@ const Navbar = () => {
               <Link href={''}>Machine bouw</Link>
             </li>
             <li className='hidden xl:block pl-[41.5px]'>
-              <Link href={''}>Projecten</Link>
+              <Link href={'/projecten'}>Projecten</Link>
             </li>
             <li className='hidden xl:block pl-[35px]'>
               <Link href={''}>Klantenservice</Link>
             </li>
             <li className='hidden xl:block pl-[35px]'>
-              <Link href={''}>Blog</Link>
+              <Link href={'/blog'}>Blog</Link>
             </li>
-            <Link href={''} className='ml-[37px]'>
+            <Link href={'/offerte'} className='ml-[37px]'>
             <div className='btn h-[52px] w-[223px] rounded-[5px] bg-[#E98A14]  pl-[41px] pr-[39px] text-[18px] font-semibold tracking-tight text-white hover:bg-[#E98A14] hover:opacity-90 border-none'>
                <span>Offerte aanvragen</span> 
               </div>
@@ -256,7 +256,8 @@ const Navbar = () => {
       <div className='shadow-menu-white absolute top-[53px] z-10 flex h-[73px] w-full items-center  justify-center bg-[#FFFFFF] lg:bottom-0 padding-content'>
         <div className='w-[1200px] flex-row  items-center justify-center hidden lg:flex'>
           <div className='z-10 mr-[173px] mt-[43px] hidden rounded-[5px] bg-white px-[30px] py-[16px] xl:block'>
-            <Image
+            <Link href={'/'}>
+               <Image
               src={
                 'https://belas.s3.eu-north-1.amazonaws.com/belas-new/belas_logo.webp'
               }
@@ -265,13 +266,15 @@ const Navbar = () => {
               alt='belas VOF logo'
               className='rounded-[5px]'
             />
+            </Link>
+         
           </div>
           <ul className='hidden items-center justify-center text-[18px]/[43px] font-semibold text-[#182228] text-opacity-[0.75] lg:flex'>
             <li className=''>
-              <Link href={''}>Aluminium hekken</Link>
+              <Link href={'/hekken'}>Aluminium hekken</Link>
             </li>
             <li className='pl-[39px]'>
-              <Link href={''}>Stalen hekken</Link>
+              <Link href={'/hekken'}>Stalen hekken</Link>
             </li>
             <li className='pl-[46px]'>
               <Link href={''}>Constructies</Link>
@@ -279,7 +282,7 @@ const Navbar = () => {
             <li className='pl-[40px]'>
               <Link href={''}>Machine bouw</Link>
             </li>
-            <Link href={''} className='ml-[36px]'>
+            <Link href={'/offerte'} className='ml-[36px]'>
               <div className='btn h-[52px] w-[223px] rounded-[5px] bg-[#E98A14]  pl-[41px] pr-[39px] text-[18px] font-semibold tracking-tight text-white hover:bg-[#E98A14] hover:opacity-90 border-none'>
                 <span>Offerte aanvragen</span>
               </div>

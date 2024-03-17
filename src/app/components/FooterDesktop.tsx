@@ -90,7 +90,7 @@ const FooterDesktop = () => {
                       <Link href={''}>Klantenservice</Link>
                     </li>
                     <li>
-                      <Link href={''}>Blog</Link>
+                      <Link href={'/blog'}>Blog</Link>
                     </li>
                     <li>
                       <Link href={''}>Kennisbank</Link>
@@ -103,10 +103,10 @@ const FooterDesktop = () => {
                       <Link href={''}>Voorraad</Link>
                     </li>
                     <li>
-                      <Link href={''}>Reperatie</Link>
+                      <Link href={''}>Reparatie</Link>
                     </li>
                     <li>
-                      <Link href={''}>Contact</Link>
+                      <Link href={'/contact'}>Contact</Link>
                     </li>
                   </ul>
                 </div>

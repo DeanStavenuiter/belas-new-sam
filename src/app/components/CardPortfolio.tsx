@@ -5,15 +5,16 @@ interface CardPortfolioProps {
   nameProject: string;
   imgBgClass: string;
   href: string;
-  device: string;
+  w: number;
+  h: number;
 }
 
-const CardPortfolio = ({ nameProject, imgBgClass, href, device }: CardPortfolioProps) => {
+const CardPortfolio = ({ nameProject, imgBgClass, href, w, h }: CardPortfolioProps) => {
 
   return (
     <div className='relative'>
       <Link href={href} >
-      <div className={`h-[346px] w-[360px] lg:h-[483px] lg:w-[503px]  ${imgBgClass} rounded-[5px]`}>
+      <div className={`h-[346px] w-[360px] lg:h-[${h}px] lg:w-[${w}px]  ${imgBgClass} rounded-[5px]`}>
         <div className='absolute bottom-0 right-0 left-0 w-[360px] pl-[27px] pb-[27px] pr-[35px]'>
           <div className='flex justify-between w-full'>
             <span className='text-[22px]/[48px] font-semibold text-white '>

@@ -23,42 +23,48 @@ const CarouselPortfolio = () => {
       imgBgClass='bg-project-1'
       nameProject='Naam van het project'
       href=''
-      device={device}
+      w={503}
+      h={483}
     />,
     <CardPortfolio
       key={2}
       imgBgClass='bg-project-2'
       nameProject='Naam van het project'
       href=''
-      device={device}
+      w={503}
+      h={483}
     />,
     <CardPortfolio
       key={3}
       imgBgClass='bg-project-3'
       nameProject='Naam van het project'
       href=''
-      device={device}
+      w={503}
+      h={483}
     />,
     <CardPortfolio
       key={4}
       imgBgClass='bg-project-4'
       nameProject='Naam van het project'
       href=''
-      device={device}
+      w={503}
+      h={483}
     />,
     <CardPortfolio
       key={5}
       imgBgClass='bg-project-5'
       nameProject='Naam van het project'
       href=''
-      device={device}
+      w={503}
+      h={483}
     />,
     <CardPortfolio
       key={6}
       imgBgClass='bg-project-6'
       nameProject='Naam van het project'
       href=''
-      device={device}
+      w={503}
+      h={483}
     />,
   ];
 

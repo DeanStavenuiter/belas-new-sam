@@ -186,6 +186,10 @@ body {
   box-shadow: 0px 5px 15px #4e4e4e15;
 }
 
+.shadow-form{
+  box-shadow: 0px 3px 50px #58585819;
+}
+
 .carousel-container {
   position: relative;
   overflow: hidden;
@@ -408,11 +412,17 @@ body {
   color: #e98a14;
 }
 
-.text-underline-orange:hover > div .hover-effect {
+.text-underline-orange:hover > div .hover-effect{
   color: #e98a14;
   border-bottom: solid 0.5px #e98a14;
   padding-bottom: 3px;
 }
+
+.text-underline-orange:hover > div .hover-effect svg {
+  fill: #e98a14; /* Change fill color for SVG */
+}
+
+
 
 /* mobile menu animation */
 
@@ -484,3 +494,8 @@ body {
     height: 680px;
   }
 }
+
+.border-checkbox{
+  border: #BFBFBF solid 1px !important;
+}
+

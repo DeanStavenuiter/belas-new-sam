@@ -17,13 +17,14 @@ const CardHekken = ({
   h,
 }: CardHekkenProps) => {
   return (
-    <div className={`mb-[40px] flex w-[${w}px] justify-center rounded-[5px]`}>
+    <div className={`w-[369}px] mb-[40px] flex justify-center rounded-[5px]`}>
       <div
-        className={`shadow-cards flex h-[${h}px] w-[${w}px] flex-col rounded-[5px] p-[22px]`}
+        className={`shadow-cards flex h-[653px] w-[369px] flex-col rounded-[5px] p-[22px]`}
       >
         <div
-          className={`${imgBgClass} h-[237px] w-[276px] rounded-[5px] bg-[#F7F7F7]`}
-        ></div>
+          className={`${imgBgClass} h-[274px] w-[318px] rounded-[5px] bg-[#F7F7F7]`}>
+
+        </div>
 
         <div className='mt-[20px] flex flex-row justify-between'>
           <h4 className='text-[22px] font-semibold tracking-tight'>

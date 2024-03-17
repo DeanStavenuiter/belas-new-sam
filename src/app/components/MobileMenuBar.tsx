@@ -13,7 +13,7 @@ const MobileMenu = ({ handleClick }: menuProps) => {
     <div className='flex justify-center padding-content w-full lg:hidden'>
         <ul className='flex flex-row items-center gap-[10px] '>
           <li>
-            <Link href={''}>
+            <Link href={'/'}>
               <div className='btn w-[169px] rounded-[5px] border-none bg-[#E4E4E4]'>
                 <Image
                   src={
@@ -28,7 +28,7 @@ const MobileMenu = ({ handleClick }: menuProps) => {
             </Link>
           </li>
           <li>
-            <Link href={''}>
+            <Link href={'/offerte'}>
               <div className='btn w-[126px] rounded-[5px] bg-[#E98A14] text-[18px]/[43px] font-semibold text-white hover:bg-[#E98A14] hover:opacity-90'>
                 Offerte
               </div>
