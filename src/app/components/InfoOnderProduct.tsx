@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { useParams } from 'next/navigation';
 import Image from 'next/image';
+import hekwerk from '../../public/hekwerk.webp';
 
 const InfoOnderProduct = () => {
   const [chosenText, setChosenText] = useState('omschrijving');
@@ -14,7 +15,7 @@ const InfoOnderProduct = () => {
     <div>
       <div className='mr-[42px] flex h-[455px] w-[547px] items-center justify-center rounded-[7px] bg-[#F7F7F7]'>
         <Image
-          src={'/../hekwerk.webp'}
+          src={hekwerk}
           width={368}
           height={275}
           alt={`hekwerk ${params.id}`}
