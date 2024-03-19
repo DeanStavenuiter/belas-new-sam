@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { useParams } from 'next/navigation';
 import Image from 'next/image';
-import hekwerk from '../../public/hekwerk.webp';
+import hekwerk from '../../../public/hekwerk.webp';
 
 const InfoOnderProduct = () => {
   const [chosenText, setChosenText] = useState('omschrijving');
