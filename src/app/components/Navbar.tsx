@@ -253,7 +253,7 @@ const Navbar = () => {
       </div>
 
       {/* white menu bar */}
-      <div className='shadow-menu-white absolute top-[53px] z-10 flex h-[73px] w-full items-center  justify-center bg-[#FFFFFF] lg:bottom-0 padding-content'>
+      <div className='shadow-menu-white relative z-10 flex h-[73px] w-full items-center  justify-center bg-[#FFFFFF] lg:bottom-0 padding-content'>
         <div className='w-[1200px] flex-row  items-center justify-center hidden lg:flex'>
           <div className='z-10 mr-[173px] mt-[43px] hidden rounded-[5px] bg-white px-[30px] py-[16px] xl:block'>
             <Link href={'/'}>

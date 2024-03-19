@@ -11,9 +11,8 @@ body {
 
 .bg-hero-img {
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position-x: 0;
-  background-position-y: 15%;
+  /* background-size: 324%;
+  background-position-x: -240px; */
   background-image: linear-gradient(
       0deg,
       rgb(24, 34, 40, 0.9) 0%,
@@ -21,11 +20,13 @@ body {
       rgba(24, 34, 40, 0.6) 52%,
       rgba(24, 34, 40, 0) 100%
     ),
-    url('/BannerMobile.png');
+    url('/Banner.png');
 }
 
 @media (min-width: 640px) {
   .bg-hero-img {
+    background-size: unset;
+    background-position-x: unset;
     background-image: linear-gradient(
         90deg,
         rgb(24, 34, 40, 0.9) 0%,
@@ -33,7 +34,7 @@ body {
         rgba(24, 34, 40, 0.6) 52%,
         rgba(24, 34, 40, 0) 100%
       ),
-      url('/BannerMobile.png');
+      url('/Banner.png');
   }
 }
 
