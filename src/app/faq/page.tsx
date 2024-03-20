@@ -35,7 +35,7 @@ const faq = () => {
         </div>
         <div className='flex justify-center'>
           <div className='flex'>
-            <div className='flex w-[1200px] flex-row text-[20px] font-medium text-[#1C355C]'>
+            <div className='flex w-[1200px] xl:flex-row xl:justify-normal justify-center items-center xl:items-start gap-[41px] xl:gap-[unset] flex-col text-[20px] font-medium text-[#1C355C]'>
               <div className='w-[50%]'>
                 <h6 className='mb-[41px]'>Onderwerp 1</h6>
                 <div className='flex flex-col gap-[15px]'>

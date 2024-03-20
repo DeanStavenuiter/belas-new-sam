@@ -16,10 +16,10 @@ const FAQVraag = ({ vraag, antwoord }: FAQVraagProps) => {
 
   return (
     <div
-      className=' flex flex-col w-[554px] cursor-pointer rounded-[15px] border border-[#1C355C4D] bg-[#1A305508] p-[30px_50px_34px_45px]'
+      className=' flex flex-col max-w-[554px] cursor-pointer rounded-[15px] border border-[#1C355C4D] bg-[#1A305508] p-[30px_50px_34px_45px]'
       onClick={handleClick}
     >
-      <div className='flex-row items-center justify-between flex'>
+      <div className='flex-row items-center justify-between flex w-full'>
         <span className='text-[16px] font-normal tracking-tight'>{vraag}</span>
         <span>
           <svg
