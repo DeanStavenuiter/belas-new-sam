@@ -187,7 +187,7 @@ body {
   box-shadow: 0px 5px 15px #4e4e4e15;
 }
 
-.shadow-form{
+.shadow-form {
   box-shadow: 0px 3px 50px #58585819;
 }
 
@@ -413,7 +413,7 @@ body {
   color: #e98a14;
 }
 
-.text-underline-orange:hover > div .hover-effect{
+.text-underline-orange:hover > div .hover-effect {
   color: #e98a14;
   border-bottom: solid 0.5px #e98a14;
   padding-bottom: 3px;
@@ -422,8 +422,6 @@ body {
 .text-underline-orange:hover > div .hover-effect svg {
   fill: #e98a14; /* Change fill color for SVG */
 }
-
-
 
 /* mobile menu animation */
 
@@ -470,8 +468,6 @@ body {
   z-index: 49; /* Make sure it's behind the menu */
 }
 
-
-
 @media (min-width: 770px) {
   .height-footer {
     height: 900px;
@@ -496,7 +492,34 @@ body {
   }
 }
 
-.border-checkbox{
-  border: #BFBFBF solid 1px !important;
+.border-checkbox {
+  border: #bfbfbf solid 1px !important;
 }
 
+.rotate-180-Open  {
+  transform-origin: center;
+  animation: rotate-180-Open 0.5s ease-in-out forwards;
+}
+
+.rotate-180-Close  {
+  transform-origin: center;
+  animation: rotate-180-Close  0.5s ease-in-out backwards;
+}
+
+@keyframes rotate-180-Open {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes rotate-180-Close {
+  0% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
