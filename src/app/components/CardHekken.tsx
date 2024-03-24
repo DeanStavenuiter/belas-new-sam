@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 export interface CardHekkenProps {
@@ -7,6 +8,7 @@ export interface CardHekkenProps {
   imgBgClass: string;
   w: number;
   h: number;
+  href: string;
 }
 
 const CardHekken = ({
@@ -15,12 +17,11 @@ const CardHekken = ({
   imgBgClass,
   w,
   h,
+  href,
 }: CardHekkenProps) => {
   return (
     <div className={`mb-[40px] flex w-[${w}px] justify-center rounded-[5px]`}>
-      <div
-        className={`shadow-cards flex  flex-col rounded-[5px] p-[22px]`}
-      >
+      <div className={`shadow-cards flex  flex-col rounded-[5px] p-[22px]`}>
         <div
           className={`${imgBgClass} h-[237px] w-[276px] rounded-[5px] bg-[#F7F7F7]`}
         ></div>
@@ -64,11 +65,13 @@ const CardHekken = ({
           </div>
 
           <div className='mt-[26px] w-full hover:cursor-pointer'>
-            <div className='btn w-full rounded-[5px] border-none bg-[#E98A14] px-[88px] py-[14px] hover:bg-[#E98A14]'>
-              <span className='text-[18px] font-normal tracking-normal text-white'>
-                Hek bekijken
-              </span>
-            </div>
+            <Link href={`${href}`}>
+              <div className='btn w-full rounded-[5px] border-none bg-[#E98A14] px-[88px] py-[14px] hover:bg-[#E98A14]'>
+                <span className='text-[18px] font-normal tracking-normal text-white'>
+                  Hek bekijken
+                </span>
+              </div>
+            </Link>
           </div>
         </div>
       </div>

@@ -14,6 +14,7 @@ const CarouselHekken = () => {
       price='399'
       w={320}
       h={530}
+      href='/hekken/ASH-3015?price=399'
     />,
     <CardHekken
       key={2}
@@ -22,6 +23,7 @@ const CarouselHekken = () => {
       price='499'
       w={320}
       h={530}
+      href='/hekken/ASH-2070?price=499'
     />,
     <CardHekken
       key={3}
@@ -30,6 +32,7 @@ const CarouselHekken = () => {
       price='299'
       w={320}
       h={530}
+      href='/hekken/ASH-r25?price=299'
     />,
     <CardHekken
       key={4}
@@ -38,6 +41,7 @@ const CarouselHekken = () => {
       price='399'
       w={320}
       h={530}
+      href='/hekken/AGH-44.2-55.2?price=399'
     />,
     <CardHekken
       key={4}
@@ -46,6 +50,7 @@ const CarouselHekken = () => {
       price='399'
       w={320}
       h={530}
+      href='/hekken/ASH-3015?price=399'
     />,
   ];
 

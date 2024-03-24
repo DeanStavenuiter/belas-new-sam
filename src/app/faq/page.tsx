@@ -27,7 +27,7 @@ const faq = () => {
               nonumy eirmod tempor invidunt ut
             </p>
           </div>
-          <div className='btn rounded-[5px] hover:border-[#E98A14] border-[#E98A14] hover:bg-white bg-white p-[12px_47px_14px_48px] '>
+          <div className='btn rounded-[5px] border-[#E98A14] bg-white p-[12px_47px_14px_48px] hover:border-[#E98A14] hover:bg-white '>
             <span className='text-[16px] font-medium tracking-tighter text-[#E98A14]'>
               Neem contact met ons op
             </span>
@@ -35,77 +35,76 @@ const faq = () => {
         </div>
         <div className='flex justify-center'>
           <div className='flex'>
-            <div className='flex w-[1200px] xl:flex-row xl:justify-normal justify-center items-center xl:items-start gap-[41px] xl:gap-[unset] flex-col text-[20px] font-medium text-[#1C355C]'>
-              <div className='w-[50%]'>
-                <h6 className='mb-[41px]'>Onderwerp 1</h6>
+            <div className='flex w-[1200px] flex-col items-center justify-center gap-[41px] text-[20px] font-medium text-[#1C355C] xl:flex-row xl:items-start xl:justify-normal xl:gap-[unset]'>
+              <div className='mx-[35px] sm:mx-[unset] xl:w-[50%]'>
+                <h6 className='mb-[41px] text-center md:text-left'>Onderwerp 1</h6>
                 <div className='flex flex-col gap-[15px]'>
                   <FAQVraag
-                  vraag='Hier komt een veelgestelde vraag te staan'
-                  antwoord='  Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                    vraag='Hier komt een veelgestelde vraag te staan'
+                    antwoord='  Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                       sed diam nonumy eirmod tempor invidunt ut labore et dolore
                       magna aliquyam erat Lorem ipsum dolor sit amet, consetetur'
-                />
-                <FAQVraag
-                  vraag='Hier komt een veelgestelde vraag te staan'
-                  antwoord='  Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                  />
+                  <FAQVraag
+                    vraag='Hier komt een veelgestelde vraag te staan'
+                    antwoord='  Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                       sed diam nonumy eirmod tempor invidunt ut labore et dolore
                       magna aliquyam erat Lorem ipsum dolor sit amet, consetetur'
-                />
-                <FAQVraag
-                  vraag='Hier komt een veelgestelde vraag te staan'
-                  antwoord='  Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                  />
+                  <FAQVraag
+                    vraag='Hier komt een veelgestelde vraag te staan'
+                    antwoord='  Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                       sed diam nonumy eirmod tempor invidunt ut labore et dolore
                       magna aliquyam erat Lorem ipsum dolor sit amet, consetetur'
-                />
-                <FAQVraag
-                  vraag='Hier komt een veelgestelde vraag te staan'
-                  antwoord='  Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                  />
+                  <FAQVraag
+                    vraag='Hier komt een veelgestelde vraag te staan'
+                    antwoord='  Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                       sed diam nonumy eirmod tempor invidunt ut labore et dolore
                       magna aliquyam erat Lorem ipsum dolor sit amet, consetetur'
-                />
-                <FAQVraag
-                  vraag='Hier komt een veelgestelde vraag te staan'
-                  antwoord='  Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                  />
+                  <FAQVraag
+                    vraag='Hier komt een veelgestelde vraag te staan'
+                    antwoord='  Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                       sed diam nonumy eirmod tempor invidunt ut labore et dolore
                       magna aliquyam erat Lorem ipsum dolor sit amet, consetetur'
-                />
+                  />
                 </div>
               </div>
-              <div className='w-[50%] mb-[229px]'>
-                <h6 className='mb-[41px]'>Onderwerp 2</h6>
+              <div className='mx-[35px] sm:mx-[unset] xl:w-[50%]'>
+                <h6 className='mb-[41px] text-center md:text-left'>Onderwerp 2</h6>
                 <div className='flex flex-col gap-[15px]'>
                   <FAQVraag
-                  vraag='Hier komt een veelgestelde vraag te staan'
-                  antwoord='  Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                    vraag='Hier komt een veelgestelde vraag te staan'
+                    antwoord='  Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                       sed diam nonumy eirmod tempor invidunt ut labore et dolore
                       magna aliquyam erat Lorem ipsum dolor sit amet, consetetur'
-                />
-                <FAQVraag
-                  vraag='Hier komt een veelgestelde vraag te staan'
-                  antwoord='  Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                  />
+                  <FAQVraag
+                    vraag='Hier komt een veelgestelde vraag te staan'
+                    antwoord='  Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                       sed diam nonumy eirmod tempor invidunt ut labore et dolore
                       magna aliquyam erat Lorem ipsum dolor sit amet, consetetur'
-                />
-                <FAQVraag
-                  vraag='Hier komt een veelgestelde vraag te staan'
-                  antwoord='  Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                  />
+                  <FAQVraag
+                    vraag='Hier komt een veelgestelde vraag te staan'
+                    antwoord='  Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                       sed diam nonumy eirmod tempor invidunt ut labore et dolore
                       magna aliquyam erat Lorem ipsum dolor sit amet, consetetur'
-                />
-                <FAQVraag
-                  vraag='Hier komt een veelgestelde vraag te staan'
-                  antwoord='  Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                  />
+                  <FAQVraag
+                    vraag='Hier komt een veelgestelde vraag te staan'
+                    antwoord='  Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                       sed diam nonumy eirmod tempor invidunt ut labore et dolore
                       magna aliquyam erat Lorem ipsum dolor sit amet, consetetur'
-                />
-                <FAQVraag
-                  vraag='Hier komt een veelgestelde vraag te staan'
-                  antwoord='  Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                  />
+                  <FAQVraag
+                    vraag='Hier komt een veelgestelde vraag te staan'
+                    antwoord='  Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                       sed diam nonumy eirmod tempor invidunt ut labore et dolore
                       magna aliquyam erat Lorem ipsum dolor sit amet, consetetur'
-                />
+                  />
                 </div>
-                
               </div>
             </div>
           </div>

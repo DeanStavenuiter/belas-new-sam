@@ -86,7 +86,7 @@ const GrijzeBar = () => {
           <li>
             <Link
               className='hidden pl-[44.13px] text-[15px]/[50px] lg:flex '
-              href={''}
+              href={'/projecten'}
             >
               Projecten
             </Link>
@@ -110,7 +110,7 @@ const GrijzeBar = () => {
           <li>
             <Link
               className='hidden pl-[32px] text-[15px]/[50px] lg:flex'
-              href={''}
+              href={'/blog'}
             >
               Blog
             </Link>
